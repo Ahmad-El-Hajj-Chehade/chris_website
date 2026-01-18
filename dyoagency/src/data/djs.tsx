@@ -1,0 +1,1 @@
+export const djs = [ { id: 'dj-eins', name: 'DJ Name', shortBio: 'Internationaler Techno Artist.', fullBio: 'Ausführliche Biografie über den Werdegang und Erfolge.', presskit: '/downloads/presskit-dj-eins.zip', image: '/images/dj-eins.jpg' } ];
