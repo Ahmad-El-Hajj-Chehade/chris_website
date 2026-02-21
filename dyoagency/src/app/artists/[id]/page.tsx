@@ -1,7 +1,46 @@
-import { djs } from '@/data/djs'; import Image from 'next/image'; import { notFound } from 'next/navigation';
+import { djs } from '@/data/djs';
+import Image from 'next/image';
+import { notFound } from 'next/navigation';
 
-export default function ArtistPage({ params }: { params: { id: string } }) { const dj = djs.find(d => d.id === params.id);
+// Wir machen die Funktion async, um params zu awaiten
+export default async function ArtistPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const dj = djs.find((d) => d.id === id);
 
-if (!dj) notFound();
+  if (!dj) {
+    notFound();
+  }
 
-return ( <div className="bg-black text-white min-h-screen p-10"> <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10"> <div className="relative h-[60vh]"> <Image src={dj.image} alt={dj.name} fill className="object-cover" /> </div> <div> <h1 className="text-5xl font-bold mb-6">{dj.name}</h1> <p className="text-lg text-gray-300 mb-10 leading-relaxed">{dj.fullBio}</p> <div className="border border-zinc-700 p-6"> <h3 className="text-xl font-bold mb-4">Presskit</h3> <a href={dj.presskit} download className="inline-block bg-white text-black px-8 py-3 font-bold hover:bg-gray-200"> DOWNLOAD KIT (.ZIP) </a> </div> </div> </div> </div> ); }
+  return (
+    <main className="bg-black text-white min-h-screen pt-32 px-6">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
+        <div className="relative aspect-[4/5] bg-zinc-900">
+          <Image 
+            src={dj.image} 
+            alt={dj.name} 
+            fill 
+            className="object-cover" 
+            priority
+          />
+        </div>
+        <div>
+          <h1 className="text-6xl font-black mb-6 uppercase tracking-tighter">{dj.name}</h1>
+          <p className="text-xl text-zinc-400 leading-relaxed mb-12">
+            {dj.fullBio}
+          </p>
+          <div className="border border-zinc-800 p-8 inline-block">
+            <h3 className="text-sm uppercase tracking-widest text-zinc-500 mb-4">Downloads</h3>
+            <a 
+              href={dj.presskit} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-white text-black px-8 py-4 font-bold hover:bg-zinc-200 transition"
+            >
+              OPEN PRESSKIT
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+  );
+}
