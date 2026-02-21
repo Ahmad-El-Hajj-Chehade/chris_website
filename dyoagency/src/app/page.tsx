@@ -43,7 +43,7 @@ export default function Home() {
             <Link key={dj.id} href={`/artists/${dj.id}`} className="group block">
               <div className="relative aspect-[4/5] overflow-hidden bg-zinc-900 grayscale hover:grayscale-0 transition-all duration-700">
                 <Image 
-                  src={dj.image} 
+                  src={dj.image|| '/images/placeholder.jpg'} 
                   alt={dj.name} 
                   fill 
                   className="object-cover scale-105 group-hover:scale-100 transition-transform duration-700"
