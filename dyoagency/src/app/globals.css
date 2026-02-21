@@ -11,6 +11,14 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
+.logo-bold {
+  font-family: 'Inter', sans-serif; /* Oder deine gewählte Schrift */
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.05em; /* Zieht die Buchstaben eng zusammen */
+  line-height: 0.8;
+  display: inline-block;
+}
 
 @media (prefers-color-scheme: dark) {
   :root {
