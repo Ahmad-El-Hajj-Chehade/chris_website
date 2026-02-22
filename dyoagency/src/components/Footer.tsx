@@ -20,7 +20,7 @@ export default function Footer() {
             <div className="space-y-4">
               <h4 className="text-white text-[10px] uppercase tracking-[0.4em] font-bold">Contact</h4>
               <nav className="flex flex-col space-y-2 text-sm">
-                <a href="mailto:booking@chris.management" className="hover:text-white transition-colors uppercase tracking-wider">Booking</a>
+                <a href="#contact" className="hover:text-white transition-colors uppercase tracking-wider">Booking</a>
                 <a href="#contact" className="hover:text-white transition-colors uppercase tracking-wider">General</a>
               </nav>
             </div>

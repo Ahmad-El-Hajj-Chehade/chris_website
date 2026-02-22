@@ -61,7 +61,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ id: str
           </div>
 
           {/* Booking & Presskit Box */}
-          {dj.id !== 'mathilda-music' && dj.id !== 'voster-gallardo' ? (
+          {dj.id !== 'mathilda-music' && dj.id !== 'voster-gallardo' && dj.id !== 'dynoro' ? (
           <div className="border border-zinc-900 p-10 bg-zinc-950/50 inline-block w-full">
           
             <h3 className="text-xs uppercase tracking-[0.3em] text-zinc-500 mb-6 font-bold">
