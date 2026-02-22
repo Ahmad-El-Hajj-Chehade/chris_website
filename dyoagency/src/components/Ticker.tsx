@@ -2,7 +2,7 @@
 import { motion } from 'framer-motion';
 
 export default function Ticker() {
-  const content = " +++ CHRIS MANAGEMENT — GLOBAL BOOKINGS 2026 NOW OPEN +++ ARTIST A @ TIMEWARP +++ ARTIST B @ FABRIC LONDON +++ ARTIST C @ SONAR BARCELONA";
+  const content = " +++ CHRIS MANAGEMENT — GLOBAL BOOKINGS 2026 NOW OPEN +++ Simon Miles @ Kaufleuten 27.02 +++ Dynoro  @ Energy Star Night +++ Ilona Maras @ Vegas Club Luzern";
 
   return (
     <div className="bg-white text-black py-3 overflow-hidden whitespace-nowrap border-y border-black z-10 relative">

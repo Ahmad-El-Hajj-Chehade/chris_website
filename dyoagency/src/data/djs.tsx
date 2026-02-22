@@ -1,5 +1,14 @@
 export const djs = [
   {
+    id: 'dynoro',
+    name: 'Dynoro',
+    shortBio: 'International DJ and Producer',
+   fullBio: "Diamond and Multi-Platinum certified Lithuanian DJ and Producer DYNORO began his career in 2018...\n\nWith over 1 billion Spotify streams, his hit 'In My Mind' reached #1 in 13 countries...\n\nCollaborations include Alok, Ina Wroldsen, and 24kGoldn.",presskit: 'https://www.dropbox.com/sh/5oto1c13xr5okae/AABawQLcqSX7rsQ58YhfEalua?dl=0',
+    image: '/dynoro.jpg',
+    instagram: 'https://instagram.com/simonmiles',
+    website: 'https://simonmiles.com'
+  },
+  {
     id: 'simon-miles',
     name: 'Simon Miles',
     shortBio: 'International DJ and Producer',

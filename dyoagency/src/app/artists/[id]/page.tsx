@@ -55,7 +55,9 @@ export default async function ArtistPage({ params }: { params: Promise<{ id: str
           </div>
 
           {/* Booking & Presskit Box */}
+          {dj.id !== 'mathilda-music' && dj.id !== 'voster-gallardo' ? (
           <div className="border border-zinc-900 p-10 bg-zinc-950/50 inline-block w-full">
+          
             <h3 className="text-xs uppercase tracking-[0.3em] text-zinc-500 mb-6 font-bold">
               Booking & Management
             </h3>
@@ -75,11 +77,39 @@ export default async function ArtistPage({ params }: { params: Promise<{ id: str
                   href="mailto:booking@chrismanagement.com" 
                   className="text-white hover:text-zinc-400 transition-colors font-medium"
                 >
-                  booking@chrismanagement.com
+                  booking@chris.management
                 </a>
               </div>
             </div>
           </div>
+          ) : (
+          <div className="border border-zinc-900 p-10 bg-zinc-950/50 inline-block w-full">
+          
+            <h3 className="text-xs uppercase tracking-[0.3em] text-zinc-500 mb-6 font-bold">
+              Booking
+            </h3>
+            
+            <div className="flex flex-col sm:flex-row gap-6 items-start sm:items-center">
+              <a 
+                href={dj.presskit} 
+                target="_blank" 
+                className="bg-white text-black px-10 py-4 font-black hover:bg-zinc-200 transition-all uppercase tracking-tighter text-sm"
+              >
+                Download Presskit
+              </a>
+              
+              <div className="flex flex-col">
+                <span className="text-[10px] uppercase text-zinc-600 tracking-widest mb-1">Inquiry</span>
+                <a 
+                  href="mailto:booking@chrismanagement.com" 
+                  className="text-white hover:text-zinc-400 transition-colors font-medium"
+                >
+                  booking@chris.management
+                </a>
+              </div>
+            </div>
+          </div>
+          )}
         </div>
       </div>
     </main>

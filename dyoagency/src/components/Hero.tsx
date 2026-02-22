@@ -11,8 +11,8 @@ export default function Hero() {
         transition={{ duration: 0.6 }}
       >
         {/* text-4xl auf Mobile, text-8xl auf Desktop */}
-        <h1 className="text-3xl sm:text-4xl md:text-8xl font-black tracking-tighter mb-6 text-white uppercase leading-[0.9] break-words">
-          Chris<br />Management
+        <h1 className="text-4xl sm:text-5xl md:text-8xl font-black tracking-tighter mb-6 text-white uppercase leading-[0.9] break-words">
+          Chris<br /><span className="text-zinc-600">Management</span>
         </h1>
         <p className="text-lg md:text-2xl text-zinc-400 max-w-2xl leading-snug">
           A premier talent agency representing elite electronic music artists. 
