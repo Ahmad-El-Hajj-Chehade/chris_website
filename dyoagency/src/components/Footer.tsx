@@ -1,30 +1,53 @@
-import Newsletter from "./Newsletter";
-
 export default function Footer() {
   return (
-    <footer className="bg-black text-zinc-600 py-20 px-6 border-t border-zinc-900">
+    <footer className="bg-black text-zinc-600 py-24 px-6 border-t border-zinc-900">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 mb-20">
-          <div className="space-y-8">
-            <h3 className="text-white font-black tracking-tighter text-2xl uppercase">CHRIS MANAGEMENT</h3>
-           {//} <Newsletter 
-           }
+        <div className="flex flex-col md:flex-row justify-between items-start gap-16 mb-24">
+          
+          {/* Linke Seite: Große Typografie als Statement */}
+          <div className="max-w-md">
+            <h3 className="text-white font-black tracking-tighter text-3xl uppercase mb-6">
+              Chris <span className="text-zinc-700">Management</span>
+            </h3>
+            <p className="text-sm leading-relaxed uppercase tracking-widest text-zinc-500">
+              International talent representation for the electronic music industry. 
+              Bridging elite artists and global stages.
+            </p>
           </div>
-          
-          
-            <div>
-              <h4 className="text-white text-xs uppercase tracking-widest font-bold mb-4">Legal</h4>
-              <p className="text-sm hover:text-white cursor-pointer">Impressum</p>
-              <p className="text-sm hover:text-white cursor-pointer">Privacy</p>
+
+          {/* Rechte Seite: Strukturierte Links */}
+          <div className="grid grid-cols-2 gap-12 md:gap-24">
+            <div className="space-y-4">
+              <h4 className="text-white text-[10px] uppercase tracking-[0.4em] font-bold">Contact</h4>
+              <nav className="flex flex-col space-y-2 text-sm">
+                <a href="mailto:booking@chris.management" className="hover:text-white transition-colors uppercase tracking-wider">Booking</a>
+                <a href="#contact" className="hover:text-white transition-colors uppercase tracking-wider">General</a>
+              </nav>
+            </div>
+            
+            <div className="space-y-4">
+              <h4 className="text-white text-[10px] uppercase tracking-[0.4em] font-bold">Legal</h4>
+              <nav className="flex flex-col space-y-2 text-sm">
+                <a href="/impressum" className="hover:text-white transition-colors uppercase tracking-wider">Impressum</a>
+                <a href="/privacy" className="hover:text-white transition-colors uppercase tracking-wider">Privacy</a>
+              </nav>
             </div>
           </div>
         </div>
-        
-        <div className="pt-8 border-t border-zinc-900 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-[10px] uppercase tracking-[0.3em]">© 2026 Chris Management</p>
-          <p className="text-[10px] uppercase tracking-[0.3em]">Built for Electronic Music</p>
+
+        {/* Bottom Bar */}
+        <div className="pt-12 border-t border-zinc-900 flex flex-col md:flex-row justify-between items-center gap-6">
+          <div className="flex items-center space-x-4">
+            <span className="text-[10px] uppercase tracking-[0.3em]">© 2026 Chris Management</span>
+            <span className="w-1 h-1 bg-zinc-800 rounded-full hidden md:block"></span>
+            <span className="text-[10px] uppercase tracking-[0.3em] text-zinc-800 italic">Built in Switzerland</span>
+          </div>
+          
+          <div className="text-[10px] uppercase tracking-[0.3em] font-bold text-white bg-zinc-900 px-4 py-2 rounded-sm">
+            Electronic Music Agency
+          </div>
         </div>
-     
+      </div>
     </footer>
   );
 }
