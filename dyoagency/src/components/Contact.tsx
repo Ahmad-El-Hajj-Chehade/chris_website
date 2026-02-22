@@ -13,11 +13,11 @@ export default function Contact() {
           <div className="md:text-right pt-2">
             <p className="text-xs uppercase font-bold tracking-[0.2em] text-zinc-400 mb-1">Direct Contact</p>
             <a 
-              href="mailto:booking@chrismanagement.com"
+              href="mailto:booking@chris.management"
               className="text-xl font-medium text-black hover:text-zinc-500 transition-colors select-all inline-block cursor-pointer"
               style={{ unicodeBidi: 'bidi-override', direction: 'rtl' }}
             >
-              moc.tnemeganamssirhc@gnikoob
+              tnemeganam.sirhc@gnikoob
             </a>
           </div>
         </div>
