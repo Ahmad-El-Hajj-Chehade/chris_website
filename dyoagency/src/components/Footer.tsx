@@ -7,15 +7,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 mb-20">
           <div className="space-y-8">
             <h3 className="text-white font-black tracking-tighter text-2xl uppercase">CHRIS MANAGEMENT</h3>
-            <Newsletter />
+           {//} <Newsletter 
+           }
           </div>
           
-          <div className="grid grid-cols-2 gap-8 md:justify-items-end text-right">
-            <div>
-              <h4 className="text-white text-xs uppercase tracking-widest font-bold mb-4">Office</h4>
-              <p className="text-sm">Zürich, CH</p>
-              <p className="text-sm">Berlin, DE</p>
-            </div>
+          
             <div>
               <h4 className="text-white text-xs uppercase tracking-widest font-bold mb-4">Legal</h4>
               <p className="text-sm hover:text-white cursor-pointer">Impressum</p>
@@ -28,7 +24,7 @@ export default function Footer() {
           <p className="text-[10px] uppercase tracking-[0.3em]">© 2026 Chris Management</p>
           <p className="text-[10px] uppercase tracking-[0.3em]">Built for Electronic Music</p>
         </div>
-      </div>
+     
     </footer>
   );
 }

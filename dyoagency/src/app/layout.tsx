@@ -62,12 +62,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Navbar />
         {children}
         <SpeedInsights />
-        <footer className="py-10 border-t border-zinc-900 text-center">
+        
           <ScrollToTop />
-          <p className="text-zinc-600 text-sm">
-            © {new Date().getFullYear()} DYOAGENCY. All rights reserved.
-          </p>
-        </footer>
+         
       </body>
     </html>
   );
