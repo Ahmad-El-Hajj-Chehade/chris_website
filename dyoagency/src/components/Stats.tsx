@@ -2,10 +2,10 @@
 import { motion } from 'framer-motion';
 
 const stats = [
-  { label: "Active Roster", value: "12" },
+  { label: "Active Roster", value: "6" },
   { label: "Annual Shows", value: "250+" },
-  { label: "Countries Reached", value: "34" },
-  { label: "Years Experience", value: "08" }
+  { label: "Countries Reached", value: "25+" },
+  { label: "Years Experience", value: "10" }
 ];
 
 export default function Stats() {

@@ -44,5 +44,12 @@ export const djs = [
     image: '/Voster & Gallardo.png',
     instagram: 'https://instagram.com/simonmiles',
     website: 'https://simonmiles.com'
+  },
+   {
+    id: 'future-artist',
+    name: 'This could be you',
+   shortBio: 'Upcoming Artist',
+    image: '/you.jpg',
+    
   }
 ];
