@@ -1,3 +1,4 @@
+import SpotifyPlayer from '@/components/SpotifyPlayer';
 import { djs } from '@/data/djs';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
@@ -33,6 +34,11 @@ export default async function ArtistPage({ params }: { params: Promise<{ id: str
           <p className="text-xl text-zinc-400 leading-relaxed mb-10 whitespace-pre-line max-w-xl">
             {dj.fullBio}
           </p>
+          <div className="player-area">
+            {dj.id !== 'mathilda-music' && dj.spotifyId && (
+         <SpotifyPlayer uri={dj.spotifyId ?? ''} />
+            )}
+       </div>
 
           {/* Social & Website Links */}
           <div className="flex flex-wrap gap-4 mb-12">
