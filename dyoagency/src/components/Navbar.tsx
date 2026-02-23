@@ -47,7 +47,7 @@ export default function Navbar() {
         </button>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex space-x-8 text-[10px] font-bold uppercase tracking-[0.3em] text-zinc-500">
+        <div className="hidden md:flex space-x-8 text-[12px] font-bold uppercase tracking-[0.3em] text-zinc-400">
           {navLinks.map((link) => (
             <Link key={link.name} href={link.href} className="hover:text-white transition-colors">
               {link.name}

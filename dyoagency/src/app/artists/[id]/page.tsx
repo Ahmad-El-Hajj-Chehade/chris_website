@@ -16,7 +16,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ id: str
         {/* Artist Image */}
         <div className="relative aspect-[4/5] bg-zinc-900 overflow-hidden">
           <Image 
-            src={dj.image} 
+            src={dj.image ?? '/placeholder-image.jpg'} 
             alt={dj.name} 
             fill 
             className="object-cover" 
@@ -35,7 +35,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ id: str
             {dj.fullBio}
           </p>
           <div className="player-area">
-            {dj.id !== 'mathilda-music' && dj.spotifyId && (
+            {dj.id !== 'regina-brury' && dj.spotifyId && (
          <SpotifyPlayer uri={dj.spotifyId ?? ''} />
             )}
        </div>
@@ -50,6 +50,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ id: str
             >
               Instagram
             </a>
+             {dj.id !== 'ilona-maras' && dj.spotifyId && (
             <a 
               href={dj.website} 
               target="_blank" 
@@ -58,6 +59,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ id: str
             >
               Official Website
             </a>
+             )}
           </div>
 
           {/* Booking & Presskit Box */}
