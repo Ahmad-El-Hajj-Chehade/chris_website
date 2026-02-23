@@ -26,7 +26,7 @@ export default function Gallery() {
   return (
     <section id="gallery" className="py-32 px-6 bg-black">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-xs uppercase tracking-[0.4em] text-zinc-600 mb-12 px-2">Gallery</h2>
+        <h2 className="text-xs uppercase tracking-[0.4em] text-zinc-400 mb-12 px-2">Gallery</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {milestones.map((item, index) => <ParallaxImage key={index} item={item} />)}
         </div>

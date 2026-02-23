@@ -19,7 +19,7 @@ export default function Home() {
       
        <Services />
       <section id="artists" className="py-24 px-6 max-w-7xl mx-auto">
-        <h2 className="text-sm uppercase tracking-[0.4em] text-zinc-600 mb-12">Roster</h2>
+        <h2 className="text-sm uppercase tracking-[0.4em] text-zinc-400 mb-12">Roster</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {djs.map((dj) => (
             <Link key={dj.id} href={`/artists/${dj.id}`} className="group block">
