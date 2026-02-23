@@ -21,23 +21,23 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "DYOAGENCY | Elite Electronic Music Talent Management",
-    template: "%s | DYOAGENCY"
+    default: "Chris Management | Elite Electronic Music Talent Management",
+    template: "%s | Chris Management",
   },
   description: "Premier talent agency representing elite electronic music artists. Specializing in booking, tour management, and strategic career development for global DJs.",
   keywords: ["DJ Booking", "Artist Management Switzerland", "Electronic Music Agency", "DJs", "House Music", "Deep House","Swiss DJs", "Techno Talent", "Tour Management"],
-  authors: [{ name: "DYOAGENCY" }],
+  authors: [{ name: "Chris Management" }],
   openGraph: {
-    title: "DYOAGENCY | Global Artist Management",
+    title: "Chris Management | Global Artist Management",
     description: "Bridging the gap between world-class DJs and global festival stages.",
     url: "https://dyoagency.com",
-    siteName: "DYOAGENCY",
+    siteName: "Chris Management",
     images: [
       {
         url: "/og-image.jpg", // Erstelle ein 1200x630px Bild in deinem public Ordner
         width: 1200,
         height: 630,
-        alt: "DYOAGENCY Artist Roster",
+        alt: "Chris Management Artist Roster",
       },
     ],
     locale: "en_US",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "DYOAGENCY",
+    title: "Chris Management",
     description: "Elite Electronic Music Talent Management.",
     images: ["/og-image.jpg"],
   },

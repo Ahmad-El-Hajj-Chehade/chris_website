@@ -1,7 +1,10 @@
 'use client';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 
 export default function Contact() {
+  const [subject, setSubject] = useState('Booking');
+
   return (
     <section id="contact" className="py-32 px-6 bg-white text-black">
       <div className="max-w-4xl mx-auto">
@@ -26,6 +29,7 @@ export default function Contact() {
           <div className="hidden" aria-hidden="true">
             <input type="text" name="_gotcha" tabIndex={-1} autoComplete="off" />
           </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="flex flex-col space-y-2">
               <label className="text-xs uppercase font-bold tracking-widest text-zinc-400">Your Name</label>
@@ -36,15 +40,48 @@ export default function Contact() {
               <input type="email" name="email" required className="w-full border-b-2 border-zinc-200 py-4 outline-none focus:border-black transition-colors bg-transparent" placeholder="email@example.com" />
             </div>
           </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="flex flex-col space-y-2">
+              <label className="text-xs uppercase font-bold tracking-widest text-zinc-400">Phone Number</label>
+              <input type="tel" name="phone" className="w-full border-b-2 border-zinc-200 py-4 outline-none focus:border-black transition-colors bg-transparent" placeholder="+41 00 000 00 00" />
+            </div>
+            <div className="flex flex-col space-y-2">
+              <label className="text-xs uppercase font-bold tracking-widest text-zinc-400">Subject</label>
+              <select 
+                name="subject_select" 
+                value={subject}
+                onChange={(e) => setSubject(e.target.value)}
+                className="w-full border-b-2 border-zinc-200 py-4 outline-none focus:border-black transition-colors bg-transparent cursor-pointer appearance-none"
+              >
+                <option value="Booking">Booking</option>
+                <option value="Allgemein">General</option>
+                <option value="Weiteres">other</option>
+              </select>
+            </div>
+          </div>
+
+          {/* Bedingtes Feld für "Weiteres" */}
+          {subject === 'Weiteres' && (
+            <motion.div 
+              initial={{ opacity: 0, y: -10 }} 
+              animate={{ opacity: 1, y: 0 }} 
+              className="flex flex-col space-y-2"
+            >
+              <label className="text-xs uppercase font-bold tracking-widest text-zinc-400">Please specify subject</label>
+              <input type="text" name="custom_subject" required className="w-full border-b-2 border-zinc-200 py-4 outline-none focus:border-black transition-colors bg-transparent" placeholder="Your specific topic..." />
+            </motion.div>
+          )}
+
           <div className="flex flex-col space-y-2">
             <label className="text-xs uppercase font-bold tracking-widest text-zinc-400">Message</label>
             <textarea name="message" rows={5} required className="w-full border-b-2 border-zinc-200 py-4 outline-none focus:border-black transition-colors bg-transparent resize-none" placeholder="Tell us about your event..."></textarea>
           </div>
+
           <div className="pt-8 flex flex-col md:flex-row md:items-center md:justify-between gap-8">
             <button type="submit" className="bg-black text-white px-12 py-5 font-bold tracking-[0.2em] uppercase hover:bg-zinc-800 transition-all">
               Send Inquiry →
             </button>
-            <p className="text-zinc-400 text-sm italic">We usually respond within 24 hours.</p>
           </div>
         </form>
       </div>

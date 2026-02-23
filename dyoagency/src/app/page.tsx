@@ -16,7 +16,7 @@ export default function Home() {
     <main className="bg-black text-white min-h-screen">
      
       <Hero />
-      <Ticker />
+      
        <Services />
       <section id="artists" className="py-24 px-6 max-w-7xl mx-auto">
         <h2 className="text-sm uppercase tracking-[0.4em] text-zinc-600 mb-12">Roster</h2>
