@@ -20,12 +20,14 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: {
-    default: "Chris Management | Elite Electronic Music Talent Management",
-    template: "%s | Chris Management",
-  },
-  description: "Premier talent agency representing elite electronic music artists. Specializing in booking, tour management, and strategic career development for global DJs.",
-  keywords: ["DJ Booking", "Artist Management Switzerland", "Electronic Music Agency", "DJs", "House Music", "Deep House","Swiss DJs", "Techno Talent", "Tour Management"],
+title: 'CHRIS MANAGEMENT | Booking Agency & Artist Management | Zurich',
+  description: 'Leading boutique agency for Electronic Music (Techno, House) and Acoustic Pop. Representing DYNORO, INAMAR, Regina Brury and more. Book elite DJs and Singers for international events, festivals and clubs.',
+  keywords: [
+    'Artist Management Switzerland', 'Booking Agency Zurich', 'Electronic Music Agency', 
+    'Techno DJ Booking', 'House DJ Management', 'Singer Booking Switzerland', 
+    'Acoustic Pop Artists', 'Female DJs Switzerland', 'International Artist Representation', 
+    'Event Entertainment Zurich', 'Festival Booking Agency', 'Music Talent Management'
+  ],
   authors: [{ name: "Chris Management" }],
   openGraph: {
     title: "Chris Management | Global Artist Management",

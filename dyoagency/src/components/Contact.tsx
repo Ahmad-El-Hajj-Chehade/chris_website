@@ -3,7 +3,8 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 
 export default function Contact() {
-  const [subject, setSubject] = useState('Booking');
+  // Startzustand leer lassen, damit die Validierung greift
+  const [subject, setSubject] = useState('');
 
   return (
     <section id="contact" className="py-32 px-6 bg-white text-black">
@@ -51,18 +52,19 @@ export default function Contact() {
               <select 
                 name="subject_select" 
                 value={subject}
+                required
                 onChange={(e) => setSubject(e.target.value)}
                 className="w-full border-b-2 border-zinc-200 py-4 outline-none focus:border-black transition-colors bg-transparent cursor-pointer appearance-none"
               >
+                <option value="" disabled>Choose your topic</option>
                 <option value="Booking">Booking</option>
-                <option value="Allgemein">General</option>
-                <option value="Weiteres">other</option>
+                <option value="General">General</option>
+                <option value="Other">Other</option>
               </select>
             </div>
           </div>
 
-          {/* Bedingtes Feld für "Weiteres" */}
-          {subject === 'Weiteres' && (
+          {subject === 'Other' && (
             <motion.div 
               initial={{ opacity: 0, y: -10 }} 
               animate={{ opacity: 1, y: 0 }} 

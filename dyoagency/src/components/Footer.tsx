@@ -47,6 +47,12 @@ export default function Footer() {
             Electronic Music Agency
           </div>
         </div>
+        <div className="mt-0 opacity-0 h-0 overflow-hidden">
+  <h2>Global Booking Agency for DJs and Singers</h2>
+  <p>Representing artists in Techno, Melodic House, Progressive, and Acoustic Pop. 
+     Based in Zurich, Switzerland, serving international festivals and clubs. 
+     Specialized in Artist Management, Talent Representation, and Event Programming.</p>
+</div>
       </div>
     </footer>
   );

@@ -15,8 +15,8 @@ export default function Hero() {
           Chris<br /><span className="text-zinc-600">Management</span>
         </h1>
         <p className="text-lg md:text-2xl text-zinc-400 max-w-2xl leading-snug">
-          A premier talent agency representing elite electronic music artists. 
-          We bridge the gap between world-class DJs and global festival stages.
+          A premier talent agency representing elite music artists. 
+          We bridge the gap between world-class artists and global festival stages.
         </p>
       </motion.div>
     </section>
