@@ -34,7 +34,7 @@ export default function Gallery() {
   return (
     <section id="gallery" className="py-32 px-6 bg-black">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-sm uppercase tracking-[0.4em] text-zinc-500 mb-16 px-2 text-center">Visual Records</h2>
+        <h2 className="text-sm uppercase tracking-[0.4em] text-zinc-400 mb-16 px-2">Visual Records</h2>
         <div className="columns-1 md:columns-2 lg:columns-3 gap-4 space-y-4">
           {milestones.map((item, index) => (
             <div key={index} className="break-inside-avoid">
