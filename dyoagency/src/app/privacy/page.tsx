@@ -30,7 +30,7 @@ export default function Privacy() {
           <section>
             <h2 className="text-xs uppercase font-bold text-zinc-400 mb-4 tracking-[0.2em]">4. Cookies & Server Logs</h2>
             <p>
-              In cooperation with our hosting providers (e.g., Vercel), server log files are created. These record activities such as IP addresses, browser types, and timestamps. This data is not personally identifiable and is used only for technical troubleshooting and security.
+              In cooperation with our hosting providers, server log files are created. These record activities such as IP addresses, browser types, and timestamps. This data is not personally identifiable and is used only for technical troubleshooting and security.
             </p>
           </section>
 

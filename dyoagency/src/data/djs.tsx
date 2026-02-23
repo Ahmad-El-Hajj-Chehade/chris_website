@@ -67,6 +67,7 @@ Her personal audience grew organically from 900 to over 13,000 followers within 
 With her debut solo single "3 Big Words" fully produced and release-ready, Regina returns to her roots. Using only her voice and acoustic guitar, she positions herself for a Switzerland-first launch with a clear international vision.`,
     presskit:'/regina-brury-presskit-2026.pdf',
     instagram: 'https://www.instagram.com/reginabrury/',
+    website:'https://www.reginabrury.ch/'
   },
    {
     id: 'future-artist',

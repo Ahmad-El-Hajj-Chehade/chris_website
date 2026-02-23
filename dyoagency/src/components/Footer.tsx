@@ -44,7 +44,7 @@ export default function Footer() {
           </div>
           
           <div className="text-[10px] uppercase tracking-[0.3em] font-bold text-white bg-zinc-900 px-4 py-2 rounded-sm">
-            Electronic Music Agency
+            Premier Music Agency
           </div>
         </div>
         <div className="mt-0 opacity-0 h-0 overflow-hidden">
