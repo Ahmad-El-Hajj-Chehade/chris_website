@@ -10,7 +10,7 @@ export default function Footer() {
               Chris <span className="text-zinc-700">Management</span>
             </h3>
             <p className="text-sm leading-relaxed uppercase tracking-widest text-zinc-500">
-              International talent representation for the electronic music industry. 
+              International talent representation for the music industry. 
               Bridging elite artists and global stages.
             </p>
           </div>
