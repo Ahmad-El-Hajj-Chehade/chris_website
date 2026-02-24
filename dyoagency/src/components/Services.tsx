@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 
 const services = [
   { title: "Booking Management", desc: "Strategic career development and placement on global mainstages and clubs.", image: "/images/management.png" },
-//  { title: "Tour Management", desc: "Full logistics, travel coordination, and technical rider fulfillment worldwide.", image: "/images/touring.JPG" },
- // { title: "Content Management", desc: "Visual identity, social media scaling, and professional media production.", image: "/images/media.jpg" },
+ { title: "Tour Management", desc: "Full logistics, travel coordination, and technical rider fulfillment worldwide.", image: "/images/touring.JPG" },
+  { title: "Content Management", desc: "Visual identity, social media scaling, and professional media production.", image: "/images/media.jpg" },
 ];
 
 export default function Services() {
