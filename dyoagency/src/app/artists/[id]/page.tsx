@@ -3,7 +3,11 @@ import { djs } from '@/data/djs';
 import { Metadata } from 'next';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
-
+export async function generateStaticParams() {
+  return djs.map((dj) => ({
+    id: dj.id,
+  }));
+}
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
   const { id } = await params;
   const dj = djs.find((d) => d.id === id);

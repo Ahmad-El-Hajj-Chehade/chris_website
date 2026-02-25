@@ -10,7 +10,11 @@ import { djs } from '@/data/djs';
 import Link from 'next/link';
 import Image from 'next/image';
 import Stats from '@/components/Stats';
-
+export async function generateStaticParams() {
+  return djs.map((dj) => ({
+    id: dj.id,
+  }));
+}
 export default function Home() {
   return (
     <main className="bg-black text-white min-h-screen">
