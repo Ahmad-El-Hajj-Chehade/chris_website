@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar';
 import ScrollToTop from "@/components/ScrollToTop";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -64,7 +65,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Navbar />
         {children}
         <SpeedInsights />
-        
           <ScrollToTop />
          
       </body>

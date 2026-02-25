@@ -1,18 +1,29 @@
 'use client';
 import { motion } from 'framer-motion';
 
-export default function Ticker() {
-  const content = " +++ CHRIS MANAGEMENT — GLOBAL BOOKINGS 2026 NOW OPEN +++ Simon Miles @ Kaufleuten 27.02 +++ Dynoro  @ Energy Star Night +++ Ilona Maras @ Vegas Club Luzern";
+// Definieren des Typs für die Props
+interface TickerProps {
+  text: string;
+}
 
+export default function Ticker({ text }: TickerProps) {
   return (
-    <div className="bg-white text-black py-3 overflow-hidden whitespace-nowrap border-y border-black z-10 relative">
-      <motion.div 
-        animate={{ x: ["0%", "-50%"] }}
-        transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
-        className="flex space-x-8 text-[10px] md:text-xs font-black uppercase tracking-[0.3em]"
+    <div className="bg-white py-4 overflow-hidden whitespace-nowrap border-y border-white">
+      <motion.div
+        className="flex"
+        animate={{ x: [0, -1000] }} // Passt sich der Textlänge an
+        transition={{
+          repeat: Infinity,
+          ease: "linear",
+          duration: 30, // Geschwindigkeit des Tickers
+        }}
       >
-        <span className="pr-8">{content}</span>
-        <span className="pr-8">{content}</span>
+        {/* Wir wiederholen den Text mehrmals, um eine lückenlose Schleife zu erzeugen */}
+        {[...Array(10)].map((_, i) => (
+          <span key={i} className="text-black text-sm font-bold uppercase tracking-[0.4em] px-8">
+            {text} •
+          </span>
+        ))}
       </motion.div>
     </div>
   );

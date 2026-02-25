@@ -12,7 +12,7 @@ Following this success, DYNORO secured further hits with "Obsessed" (feat. Ina W
 
 After a creative hiatus, he returned with "Monsters" featuring the American rapper and songwriter 24kGoldn. His latest announcement, "Swimming In Your Eyes", marks the next chapter of his evolution in the global electronic music scene.`,
     dropbox: 'https://www.dropbox.com/scl/fo/vu59nvvwlqx073soevw5y/AG1nTb8o0kEDnaficVSpm9I?rlkey=j80xmjod17z47u6iz0g3g253d&e=1&st=usd74xdc&dl=0',
-   image: '/dynoro.jpg',
+   image: '/images/dynoro.jpg',
     instagram: 'https://www.instagram.com/dynoro/',
     website: 'https://www.dynoro.com/'
   },
@@ -27,7 +27,7 @@ Her discography includes releases on prestigious labels such as Deep Woods (by P
 
 A major milestone in her career was winning the "Change The Beat" remix contest. Her rendition of Eli & Fur’s "Better In the Dark" was officially released on the legendary Anjunadeep label, showcasing her ability to reimagine electronic music at a world-class level.`,
 presskit:"https://inamarmusic.com/media/6mE3o5gKkN/download",  
-image: "/inamar.jpg",
+image: "/images/inamar.jpg",
   instagram: 'https://www.instagram.com/inamarmusic/',
   website: 'https://inamarmusic.com/en'
 
@@ -39,7 +39,7 @@ image: "/inamar.jpg",
     shortBio: "International DJ & Electronic Producer",
     fullBio: "The Swiss record producer and DJ Simon Miles has carved a name for himself in the global dance music scene. Headlining shows worldwide, he's become a fixture in renowned venues such as the Ministry of Sound in London (DJ Mag Top 31), NOA Beach Club in Croatia (DJ Mag Top 28), and the iconic Streetparade in Zurich. Simon's chart-topping single, 'Keep Moving,' not only claimed the number one spot but also lead to multiple millions of streams on his discography, establishing him as a force to be reckoned with. His prowess in the studio extends to an official remix for Grammy award winner Mitch Wong, showcasing his versatility and musical finesse. Blessed with a charismatic stage appearance, Simon has played over 250 shows in the past years. His performances have earned him widespread acclaim, attracting the support of industry heavyweights like Nicky Romero and Dimitri Vegas & Like Mike. Simon is a household name in high end clubs, earning recognition from national radio SRF Virus, local TV and press, who have hailed him as one of the most promising Swiss dance exports. Rooted in his Swiss-German heritage, Simon Miles is not just a DJ; he's a beacon of light, as he expressed in an interview with Nexus Dance Radio, spreading hope and positivity through his gospel inspired music. With an ever-growing fan base and a relentless passion for his craft, Simon Miles is set to conquer new heights in the world of electronic dance music.",
     presskit: 'https://www.dropbox.com/sh/5oto1c13xr5okae/AABawQLcqSX7rsQ58YhfEalua?dl=0',
-    image: '/simon_miles.png',
+    image: '/images/simon_miles.jpg',
     instagram: 'https://instagram.com/simonmiles',
     website: 'https://simonmiles.com'
   },
@@ -50,14 +50,14 @@ image: "/inamar.jpg",
    shortBio: "Techno & House Artist",
     fullBio: "Ilona Maras is a DJ & producer with a love for electronic music that began at a young age. She has made a name for herself in the industry by creating a diverse and complex sound that incorporates Eastern melodies, breakbeat, house, and acid sounds.\n\nShe has played at some of the most iconic clubs and festivals worldwide, including Zurich Street Parade, Ministry Of Sound, Relevance Festival Copenhagen, Backyard Sessions Malmo, and Space Monkey. She is currently a resident DJ at Hive, one of the most symbolic techno clubs in Switzerland. Her tracks have been released on respected labels such as Filth on Acid, Get Physical, and Selador, receiving support from industry legends like Pete Tong and Nicole Moudaber.\n\nIlona's debut release 'Existe' on Get Physical Music brought her into the limelight- leading to her inclusion in DJ Mag's 'Top 6 Artists to Watch Out For' list. Known for her energetic and emotional performances, she continues to be a driving force in the global electronic music scene.",
             presskit: "https://www.dropbox.com/scl/fo/9stjd1hbcp8ndavcoogcn/AINUNoARGO47dH57e9crvx0?rlkey=ewivqzuwgc715mh0njqgseamk&st=73j90ezg&dl=0",
-            image: '/Ilona Maras.jpg',
+            image: '/images/Ilona Maras.jpg',
         instagram: 'https://www.instagram.com/ilonamaras/',
   },
   {
     id: "regina-brury",
     name: "REGINA BRURY",
     shortBio: "Romantic Acoustic Pop & Singer-Songwriter",
-    image: "/regina-brury.png", 
+    image: "/images/regina-brury.png", 
    fullBio: `Brazilian-born and Zurich-based, Regina Brury is a romantic singer-songwriter blending Brazilian emotional intensity with internationally accessible acoustic pop.
 
 After rebuilding her career from zero in Switzerland, she achieved Swiss radio rotation on stations like Radio Grischa, Radio Südostschweiz, Kanal K, and Radio 4TNG. In 2025, she performed at renowned venues such as Papiersaal and X-TRA.

@@ -1,57 +1,72 @@
+'use client';
+
 export default function Privacy() {
   return (
-    <main className="bg-white text-black min-h-screen pt-40 pb-24 px-6">
-      <div className="max-w-3xl mx-auto">
-        <h1 className="text-5xl font-black uppercase tracking-tighter mb-16">Privacy Policy</h1>
+    <main className="bg-black text-white min-h-screen pt-40 pb-24 px-6">
+      <div className="max-w-4xl mx-auto">
+        <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tighter mb-20">Legal & Privacy</h1>
         
-        <div className="space-y-12 text-sm leading-relaxed tracking-wide">
+        <div className="grid md:grid-cols-2 gap-20">
           
-          <section>
-            <h2 className="text-xs uppercase font-bold text-zinc-400 mb-4 tracking-[0.2em]">1. Overview</h2>
-            <p>
-              Based on Article 13 of the Swiss Federal Constitution and the data protection provisions of the Confederation (Data Protection Act, DSG), every person is entitled to protection of their privacy and protection against misuse of their personal data. We take the protection of your personal data very seriously.
-            </p>
+          {/* Linke Spalte: Impressum */}
+          <section className="space-y-12">
+            <div>
+              <h2 className="text-xs uppercase font-bold text-zinc-500 mb-6 tracking-[0.3em]">Imprint / Impressum</h2>
+              <div className="space-y-4 text-sm tracking-wide">
+                <p>Chris Management</p>
+                <p>Bern, Switzerland</p>
+                <p className="text-zinc-400">UID: CHE-427.916.744</p>
+                <p>Contact: info@chris.management</p>
+              </div>
+            </div>
+
+            <div className="pt-12 border-t border-zinc-900">
+              <h2 className="text-xs uppercase font-bold text-zinc-500 mb-6 tracking-[0.3em]">Disclaimer</h2>
+              <p className="text-xs text-zinc-400 leading-relaxed">
+                The content of this website is created with the utmost care. However, Chris Management assumes no liability for the accuracy, completeness, or timeliness of the content provided.
+              </p>
+            </div>
           </section>
 
-          <section>
-            <h2 className="text-xs uppercase font-bold text-zinc-400 mb-4 tracking-[0.2em]">2. Data Collection (Contact Form)</h2>
-            <p>
-              When you use our contact form, we collect the following data: Name, Email, Phone Number, Subject, and Message. This data is used exclusively to process your inquiry. We use <strong>Formspree</strong> as a service provider to process these form submissions. By submitting the form, you agree to their processing of your data.
-            </p>
-          </section>
+          {/* Rechte Spalte: Privacy Policy */}
+          <section className="space-y-12 text-sm leading-relaxed tracking-wide">
+            
+            <section>
+              <h2 className="text-xs uppercase font-bold text-zinc-500 mb-4 tracking-[0.2em]">1. Data Protection / Datenschutz</h2>
+              <p className="mb-4">
+                Based on Article 13 of the Swiss Federal Constitution, every person is entitled to protection of their privacy and misuse of personal data. We comply with these provisions.
+              </p>
+              <p className="text-zinc-500">
+                Gestützt auf Artikel 13 der Schweizerischen Bundesverfassung hat jede Person Anspruch auf Schutz ihrer Privatsphäre sowie auf Schutz vor Missbrauch ihrer persönlichen Daten. Wir halten diese Bestimmungen ein.
+              </p>
+            </section>
 
-          <section>
-            <h2 className="text-xs uppercase font-bold text-zinc-400 mb-4 tracking-[0.2em]">3. Spotify Embeds</h2>
-            <p>
-              Our website includes players from the music service <strong>Spotify</strong>. When you visit pages with a Spotify player, a connection to Spotify servers is established. Spotify may collect data about your listening habits if you are logged into your Spotify account. For more information, please see Spotify's privacy policy.
-            </p>
-          </section>
+            <section>
+              <h2 className="text-xs uppercase font-bold text-zinc-500 mb-4 tracking-[0.2em]">2. Contact Form / Kontaktformular</h2>
+              <p className="mb-4">
+                We collect your Name, Email, and Message to process inquiries. We use <strong>Formspree</strong> for secure submission.
+              </p>
+              <p className="text-zinc-500">
+                Wir erheben Name, E-Mail und Nachricht zur Bearbeitung von Anfragen. Für den sicheren Versand nutzen wir <strong>Formspree</strong>.
+              </p>
+            </section>
 
-          <section>
-            <h2 className="text-xs uppercase font-bold text-zinc-400 mb-4 tracking-[0.2em]">4. Cookies & Server Logs</h2>
-            <p>
-              In cooperation with our hosting providers, server log files are created. These record activities such as IP addresses, browser types, and timestamps. This data is not personally identifiable and is used only for technical troubleshooting and security.
-            </p>
-          </section>
+            <section>
+              <h2 className="text-xs uppercase font-bold text-zinc-500 mb-4 tracking-[0.2em]">3. External Services / Externe Dienste</h2>
+              <p className="mb-4">
+                We embed <strong>Spotify</strong> players. Spotify may collect data if you are logged into their service. We use SSL/TLS encryption for data security.
+              </p>
+              <p className="text-zinc-500">
+                Wir binden <strong>Spotify</strong>-Player ein. Spotify kann Daten erheben, wenn Sie dort eingeloggt sind. Zur Sicherheit nutzen wir eine SSL/TLS-Verschlüsselung.
+              </p>
+            </section>
 
-          <section>
-            <h2 className="text-xs uppercase font-bold text-zinc-400 mb-4 tracking-[0.2em]">5. Your Rights</h2>
-            <p>
-              You have the right to request information about your stored personal data at any time, as well as the right to correction, blocking, or deletion of this data. Please contact us at <strong>info@chris.management</strong> for such requests.
-            </p>
-          </section>
+            <section className="pt-8 border-t border-zinc-900">
+              <p className="text-zinc-600 text-xs italic">
+                Last updated: February 2026.
+              </p>
+            </section>
 
-          <section>
-            <h2 className="text-xs uppercase font-bold text-zinc-400 mb-4 tracking-[0.2em]">6. Data Security</h2>
-            <p>
-              We use SSL/TLS encryption for our website to ensure the secure transmission of confidential data, such as your inquiries via the contact form.
-            </p>
-          </section>
-
-          <section className="pt-8 border-t border-zinc-100">
-            <p className="text-zinc-400 italic">
-              Last updated: February 2026.
-            </p>
           </section>
         </div>
       </div>

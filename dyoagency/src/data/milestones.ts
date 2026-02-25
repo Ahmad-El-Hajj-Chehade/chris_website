@@ -1,36 +1,19 @@
-export const milestones = [
-   {
-   // title: "Cascada Warm up",
-  //  location: "MEC, Braunschweig",
-    image: "/images/gallery_4.jpg"
-  },
-  {
-    //title: "Festival Stage",
-    //location: "Merch release party, Rotkreuz",
-    image: "/images/gallery_2.jpg"
-  },
-  {
+const additionalImages = Array.from({ length: 32 }, (_, i) => {
+  const num = i + 1;
+  // Wenn num < 10, füge eine "0" davor (01, 02...), sonst nimm nur die Zahl
+  const fileName = num < 10 ? `0${num}` : `${num}`;
+  
+  return {
+    image: `/images/${fileName}.jpg`
+  };
+});
 
-    image: "/images/gallery_3.jpg"
-  },
-   {
-   // title: "Cascada Warm up",
-  //  location: "MEC, Braunschweig",
-    image: "/images/gallery_5.jpg"
-  },
-   {
-   // title: "Sold Out Show",
-    //location: "Kaufleuten, Zurich",
-    image: "/images/gallery_6.jpg"
-  },
-  
-   {
-   // title: "Sold Out Show",
-    //location: "Kaufleuten, Zurich",
-    image: "/images/gallery_1.jpg"
-  },
-  
-  
-  
-  
+export const milestones = [
+  { image: "/images/gallery_4.jpg" },
+  { image: "/images/gallery_2.jpg" },
+  { image: "/images/gallery_3.jpg" },
+  { image: "/images/gallery_5.jpg" },
+  { image: "/images/gallery_6.jpg" },
+  { image: "/images/gallery_1.jpg" },
+  ...additionalImages
 ];

@@ -1,24 +1,57 @@
 'use client';
-import { motion } from 'framer-motion';
+
+import { motion } from "framer-motion";
 
 export default function Hero() {
+  const title = "Chris Management";
+  const subtitle = "International Artist Management";
+
   return (
-    <section className="pt-32 pb-16 px-6 max-w-7xl mx-auto overflow-hidden">
-      <motion.div 
-        initial={{ opacity: 0, y: 20 }} 
-        whileInView={{ opacity: 1, y: 0 }} 
-        viewport={{ once: true }} 
-        transition={{ duration: 0.6 }}
+    <section className="relative h-screen w-full overflow-hidden bg-black">
+      {/* Hintergrundvideo */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 h-full w-full object-cover grayscale opacity-40"
       >
-        {/* text-4xl auf Mobile, text-8xl auf Desktop */}
-        <h1 className="text-4xl sm:text-5xl md:text-8xl font-black tracking-tighter mb-6 text-white uppercase leading-[0.9] break-words">
-          Chris<br /><span className="text-zinc-600">Management</span>
-        </h1>
-        <p className="text-lg md:text-2xl text-zinc-400 max-w-2xl leading-snug">
-          A premier talent agency representing elite music artists. 
-          We bridge the gap between world-class artists and global festival stages.
-        </p>
-      </motion.div>
+        <source src="/hero_video.mp4" type="video/mp4" />
+      </video>
+
+      {/* Content Overlay */}
+      <div className="relative z-10 flex h-full flex-col items-center justify-center px-6">
+        <div className="overflow-hidden">
+          <motion.h1 
+            initial={{ y: "100%" }}
+            animate={{ y: 0 }}
+            transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+            className="text-6xl md:text-[120px] font-black uppercase tracking-tighter text-white leading-none"
+          >
+            {title}
+          </motion.h1>
+        </div>
+        
+        <div className="overflow-hidden mt-4">
+          <motion.p 
+            initial={{ y: "100%" }}
+            animate={{ y: 0 }}
+            transition={{ duration: 1, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
+            className="text-xs md:text-sm uppercase tracking-[0.6em] text-zinc-400"
+          >
+            {subtitle}
+          </motion.p>
+        </div>
+      </div>
+
+      {/* Scroll Line */}
+      <motion.div 
+        initial={{ scaleY: 0 }}
+        animate={{ scaleY: 1 }}
+        transition={{ duration: 1, delay: 1 }}
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 w-[1px] h-16 bg-gradient-to-b from-white to-transparent origin-top"
+      />
     </section>
   );
 }
+

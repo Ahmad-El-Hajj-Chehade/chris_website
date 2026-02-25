@@ -1,47 +1,81 @@
 'use client';
-import { motion, useScroll, useTransform } from 'framer-motion';
-import { useRef } from 'react';
+import { useState } from 'react';
 import Image from 'next/image';
-import { milestones } from '@/data/milestones';
+import { motion, AnimatePresence } from 'framer-motion';
 
-function ParallaxImage({ item, index }: { item: any; index: number }) {
-  const ref = useRef(null);
-  const { scrollYProgress } = useScroll({ target: ref, offset: ["start end", "end start"] });
-  const speed = index % 2 === 0 ? ["-5%", "5%"] : ["-15%", "15%"];
-  const y = useTransform(scrollYProgress, [0, 1], speed);
-  const isWide = index % 4 === 0;
+const staticImages = [
+  { image: "/images/gallery_4.jpg" },
+  { image: "/images/gallery_2.jpg" },
+  { image: "/images/gallery_3.jpg" },
+  { image: "/images/gallery_5.jpg" },
+  { image: "/images/gallery_6.jpg" },
+  { image: "/images/gallery_1.jpg" },
+];
 
-  return (
-    <div ref={ref} className={`group relative overflow-hidden bg-zinc-900 mb-4 ${isWide ? 'aspect-video' : 'aspect-[3/4]'}`}>
-      <motion.div style={{ y, height: '130%', top: '-15%', position: 'absolute', width: '100%' }}>
-        <Image 
-          src={item.image} 
-          alt={item.title || 'Gallery Image'} 
-          fill 
-          className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700" 
-          sizes="(max-width: 768px) 100vw, 33vw" 
-        />
-      </motion.div>
-      <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
-        <p className="text-white font-bold uppercase tracking-tighter text-lg leading-none">{item.title}</p>
-        <p className="text-zinc-300 text-[10px] uppercase tracking-widest mt-2">{item.location}</p>
-      </div>
-    </div>
-  );
-}
+const generatedImages = Array.from({ length: 32 }, (_, i) => {
+  const num = i + 1;
+  const fileName = num < 10 ? `0${num}` : `${num}`;
+  return { image: `/images/${fileName}.jpg` };
+});
+
+const allImages = [...staticImages, ...generatedImages];
 
 export default function Gallery() {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const visibleImages = isExpanded ? allImages : allImages.slice(0, 5);
+
   return (
-    <section id="gallery" className="py-32 px-6 bg-black">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-sm uppercase tracking-[0.4em] text-zinc-400 mb-16 px-2">Visual Records</h2>
-        <div className="columns-1 md:columns-2 lg:columns-3 gap-4 space-y-4">
-          {milestones.map((item, index) => (
-            <div key={index} className="break-inside-avoid">
-              <ParallaxImage item={item} index={index} />
-            </div>
-          ))}
+    <section id="gallery" className="py-12 px-6 max-w-7xl mx-auto">
+      <h2 className="text-sm uppercase font-bold tracking-[0.4em] text-zinc-500 mb-12">
+        Gallery
+      </h2>
+      
+      <div className="relative">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-[250px]">
+          <AnimatePresence>
+            {visibleImages.map((item, i) => {
+              // Logik: Jedes 4. Bild nimmt 2 Spalten ein (Querformat-Effekt)
+              const isWide = i % 5 === 0;
+              
+              return (
+                <motion.div
+                  key={item.image}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5, delay: i * 0.05 }}
+                  className={`relative overflow-hidden bg-zinc-900 border border-zinc-900 
+                    ${isWide ? 'col-span-2' : 'col-span-1'}`}
+                >
+                  <Image
+                    src={item.image}
+                    alt="Artist Moment"
+                    fill
+                    className="object-cover grayscale hover:grayscale-0 transition-all duration-700 hover:scale-110"
+                    sizes={isWide ? "(max-width: 768px) 100vw, 50vw" : "(max-width: 768px) 50vw, 25vw"}
+                  />
+                </motion.div>
+              );
+            })}
+          </AnimatePresence>
         </div>
+
+        {!isExpanded && (
+          <div className="absolute bottom-0 left-0 w-full h-80 bg-gradient-to-t from-black via-black/95 to-transparent flex items-end justify-center pb-8 pointer-events-none">
+            <button 
+              onClick={() => setIsExpanded(true)}
+              className="group pointer-events-auto flex flex-col items-center gap-3 text-white"
+            >
+              <span className="text-[10px] uppercase font-bold tracking-[0.5em] text-zinc-400 group-hover:text-white transition-colors">
+                View All Moments
+              </span>
+              <div className="w-10 h-10 flex items-center justify-center rounded-full border border-zinc-800 group-hover:border-white transition-colors duration-500">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="animate-bounce">
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
+              </div>
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );
