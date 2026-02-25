@@ -13,7 +13,7 @@ export default function Privacy() {
             <div>
               <h2 className="text-xs uppercase font-bold text-zinc-500 mb-6 tracking-[0.3em]">Imprint / Impressum</h2>
               <div className="space-y-4 text-sm tracking-wide">
-                <p>Chris Management</p>
+                <p className="font-bold text-lg">Chris Lüdi</p>
                 <p>Bern, Switzerland</p>
                 <p className="text-zinc-400">UID: CHE-427.916.744</p>
                 <p>Contact: info@chris.management</p>

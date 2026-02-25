@@ -12,11 +12,11 @@ export default function Impressum() {
           <section className="space-y-8">
             <div>
               <h2 className="text-xs uppercase font-bold text-zinc-500 mb-4 tracking-[0.2em]">Contact / Kontakt</h2>
-              <p className="font-bold text-lg">DYO AGENCY</p>
-              <p>Zürich, Switzerland</p>
+              <p className="font-bold text-lg">Chris Management</p>
+              <p>Bern, Switzerland</p>
               <p className="mt-2">UID: CHE-427.916.744</p>
               <p className="mt-4">
-                Email: <a href="mailto:info@dyo-agency.com" className="underline hover:text-zinc-400 transition-colors">info@dyo-agency.com</a>
+                Email: <a href="mailto:info@chris.management" className="underline hover:text-zinc-400 transition-colors">info@chris.management</a>
               </p>
             </div>
 
@@ -32,20 +32,20 @@ export default function Impressum() {
             <div>
               <h2 className="text-xs uppercase font-bold text-zinc-500 mb-4 tracking-[0.2em]">Disclaimer / Haftung</h2>
               <p className="mb-4">
-                DYO Agency assumes no liability for the accuracy, reliability, and completeness of the information. Liability claims for material or immaterial damage are excluded.
+                Chris Management assumes no liability for the accuracy, reliability, and completeness of the information. Liability claims for material or immaterial damage are excluded.
               </p>
               <p className="text-zinc-500 text-xs">
-                Die DYO Agency übernimmt keine Gewähr für die Richtigkeit, Genauigkeit und Vollständigkeit der Informationen. Haftungsansprüche wegen Schäden materieller oder immaterieller Art werden ausgeschlossen.
+                Die Chris Management übernimmt keine Gewähr für die Richtigkeit, Genauigkeit und Vollständigkeit der Informationen. Haftungsansprüche wegen Schäden materieller oder immaterieller Art werden ausgeschlossen.
               </p>
             </div>
 
             <div>
               <h2 className="text-xs uppercase font-bold text-zinc-500 mb-4 tracking-[0.2em]">Copyright / Urheberrecht</h2>
               <p className="mb-4">
-                Copyright and all other rights to content, images, and files belong exclusively to DYO Agency or the specifically named artists. Written consent is required for reproduction.
+                Copyright and all other rights to content, images, and files belong exclusively to Chris Management or the specifically named artists. Written consent is required for reproduction.
               </p>
               <p className="text-zinc-500 text-xs">
-                Die Urheber- und alle anderen Rechte an Inhalten, Bildern oder Dateien gehören ausschliesslich der DYO Agency oder den genannten Künstlern. Für die Reproduktion ist eine schriftliche Zustimmung einzuholen.
+                Die Urheber- und alle anderen Rechte an Inhalten, Bildern oder Dateien gehören ausschliesslich der Chris Management oder den genannten Künstlern. Für die Reproduktion ist eine schriftliche Zustimmung einzuholen.
               </p>
             </div>
 
