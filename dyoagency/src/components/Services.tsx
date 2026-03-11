@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 const services = [
-  { title: "International Booking", value: "Booking", desc: "Strategic career development and placement on global mainstages and clubs.", image: "/images/management.jpg" },
+  { title: "Artist Management", value: "Booking", desc: "Strategic career development and placement on global mainstages and clubs.", image: "/images/management.jpg" },
   { title: "Touring", value: "Touring", desc: "Full logistics, travel coordination, and technical rider fulfillment worldwide.", image: "/images/touring.jpg" },
   { title: "Content Production", value: "Content", desc: "Visual identity, social media scaling, and professional media production.", image: "/images/media.jpg"},
 ];
