@@ -15,15 +15,18 @@ export default function Privacy() {
               <div className="space-y-4 text-sm tracking-wide">
                 <p className="font-bold text-lg">Chris Lüdi</p>
                 <p>Bern, Switzerland</p>
-                <p className="text-zinc-400">UID: CHE-427.916.744</p>
+                <p>UID: CHE-427.916.744</p>
                 <p>Contact: info@chris.management</p>
               </div>
             </div>
 
             <div className="pt-12 border-t border-zinc-900">
               <h2 className="text-xs uppercase font-bold text-zinc-500 mb-6 tracking-[0.3em]">Disclaimer</h2>
-              <p className="text-xs text-zinc-400 leading-relaxed">
+              <p className="text-xs mb-4 leading-relaxed">
                 The content of this website is created with the utmost care. However, Chris Management assumes no liability for the accuracy, completeness, or timeliness of the content provided.
+              </p>
+              <p className ="text-xs text-zinc-500">
+                Die Inhalte dieser Website werden mit grösster Sorgfalt erstellt. Chris Management übernimmt jedoch keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der bereitgestellten Inhalte.
               </p>
             </div>
           </section>

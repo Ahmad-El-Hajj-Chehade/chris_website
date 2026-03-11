@@ -12,26 +12,27 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export default function Home() {
-  const tickerText = "Represented at Energy Star Night, Streetparade, Kaufleuten Zürich, Openair Gampel, Hollywood Pattaya, Worldhouse Pattaya, Baccarat Bangkok";
+  const tickerText = "Energy Star Night, Ministry of Sound London,  Streetparade Zurich, Kaufleuten Zürich, Openair Gampel, Aftersun Zetzwil, Hollywood Pattaya, Worldhouse Pattaya, Baccarat Bangkok";
 
   return (
     <main className="bg-black text-white min-h-screen">
       
-      {/* Hero Section nimmt den vollen Viewport ein */}
       <Hero />
 
-      {/* Ticker als Social Proof */}
-      <Ticker text={tickerText} />
-      
-      {/* Services mit Reveal-Effekt */}
-      <ScrollReveal direction="up">
-        <Services />
-      </ScrollReveal>
-
-      {/* Roster: Abstand nach unten auf 0 gesetzt für nahtlosen Übergang zur Gallery */}
-      <section id="artists" className="pt-24 pb-36 px-6 max-w-7xl mx-auto">
+      {/* Die Services ID umfasst Ticker und Services für den Hero-Scroll-Link */}
+      <div id="services" className="scroll-mt-20">
+        <Ticker text={tickerText} />
         <ScrollReveal direction="up">
-          <h2 className="text-sm uppercase tracking-[0.4em] text-zinc-400 mb-12">Roster</h2>
+          <Services />
+        </ScrollReveal>
+      </div>
+
+      {/* Roster: Reduzierter Abstand nach unten für nahtlosen Übergang zur Gallery */}
+      <section id="artists" className="pt-24 pb-0 px-6 max-w-7xl mx-auto">
+        <ScrollReveal direction="up">
+          <h2 className="text-sm uppercase tracking-[0.4em] text-zinc-400 mb-12 text-center md:text-left">
+            Roster
+          </h2>
         </ScrollReveal>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -52,7 +53,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="mt-6">
-                    <h3 className="text-2xl font-bold text-zinc-300 group-hover:text-white transition-colors">Apply Now</h3>
+                    <h3 className="text-2xl font-bold text-zinc-300 group-hover:text-white transition-colors uppercase">Apply Now</h3>
                     <p className="text-zinc-500 uppercase text-xs tracking-widest mt-1">{dj.shortBio}</p>
                   </div>
                 </a>
@@ -74,9 +75,7 @@ export default function Home() {
                       <h3 className="text-2xl font-bold uppercase tracking-tighter">{dj.name}</h3>
                       <p className="text-zinc-500 uppercase text-[10px] tracking-widest mt-1">{dj.shortBio}</p>
                     </div>
-                    <span className="text-white text-xs uppercase tracking-widest opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 transition-all duration-500">
-                      
-                    </span>
+                    
                   </div>
                 </Link>
               )}
@@ -85,7 +84,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Gallery: Die Abstände sind nun direkt in der Gallery.tsx (py-12) gesteuert */}
+      {/* Die Gallery regelt ihre Abstände intern */}
       <Gallery />
 
       <ScrollReveal direction="up">

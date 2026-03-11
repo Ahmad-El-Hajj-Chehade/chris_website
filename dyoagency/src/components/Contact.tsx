@@ -1,10 +1,23 @@
 'use client';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 export default function Contact() {
-  // Startzustand leer lassen, damit die Validierung greift
   const [subject, setSubject] = useState('');
+
+  // Lauscht auf das Event von der Services.tsx
+  useEffect(() => {
+    const handleSetSubject = (event: any) => {
+      setSubject(event.detail);
+    };
+
+    window.addEventListener('setContactSubject', handleSetSubject);
+    
+    // Cleanup Funktion
+    return () => {
+      window.removeEventListener('setContactSubject', handleSetSubject);
+    };
+  }, []);
 
   return (
     <section id="contact" className="py-32 px-6 bg-white text-black">
@@ -27,6 +40,7 @@ export default function Contact() {
         </div>
 
         <form action="https://formspree.io/f/mqedybbk" method="POST" className="space-y-8 border-t border-zinc-100 pt-16">
+          {/* Honeypot Schutz gegen Spam */}
           <div className="hidden" aria-hidden="true">
             <input type="text" name="_gotcha" tabIndex={-1} autoComplete="off" />
           </div>
@@ -34,18 +48,18 @@ export default function Contact() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="flex flex-col space-y-2">
               <label className="text-xs uppercase font-bold tracking-widest text-zinc-400">Your Name</label>
-              <input type="text" name="name" required className="w-full border-b-2 border-zinc-200 py-4 outline-none focus:border-black transition-colors bg-transparent" placeholder="John Doe" />
+              <input type="text" name="name" required className="w-full border-b-2 border-zinc-200 py-4 outline-none focus:border-black transition-colors bg-transparent placeholder:text-zinc-300" placeholder="John Doe" />
             </div>
             <div className="flex flex-col space-y-2">
               <label className="text-xs uppercase font-bold tracking-widest text-zinc-400">Your Email</label>
-              <input type="email" name="email" required className="w-full border-b-2 border-zinc-200 py-4 outline-none focus:border-black transition-colors bg-transparent" placeholder="email@example.com" />
+              <input type="email" name="email" required className="w-full border-b-2 border-zinc-200 py-4 outline-none focus:border-black transition-colors bg-transparent placeholder:text-zinc-300" placeholder="email@example.com" />
             </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="flex flex-col space-y-2">
               <label className="text-xs uppercase font-bold tracking-widest text-zinc-400">Phone Number</label>
-              <input type="tel" name="phone" className="w-full border-b-2 border-zinc-200 py-4 outline-none focus:border-black transition-colors bg-transparent" placeholder="+41 00 000 00 00" />
+              <input type="tel" name="phone" className="w-full border-b-2 border-zinc-200 py-4 outline-none focus:border-black transition-colors bg-transparent placeholder:text-zinc-300" placeholder="+41 00 000 00 00" />
             </div>
             <div className="flex flex-col space-y-2">
               <label className="text-xs uppercase font-bold tracking-widest text-zinc-400">Subject</label>
@@ -58,7 +72,8 @@ export default function Contact() {
               >
                 <option value="" disabled>Choose your topic</option>
                 <option value="Booking">Booking</option>
-                <option value="General">General</option>
+                <option value="Content">Content</option>
+                <option value="Touring">Touring</option>
                 <option value="Other">Other</option>
               </select>
             </div>
@@ -77,11 +92,11 @@ export default function Contact() {
 
           <div className="flex flex-col space-y-2">
             <label className="text-xs uppercase font-bold tracking-widest text-zinc-400">Message</label>
-            <textarea name="message" rows={5} required className="w-full border-b-2 border-zinc-200 py-4 outline-none focus:border-black transition-colors bg-transparent resize-none" placeholder="Tell us about your event..."></textarea>
+            <textarea name="message" rows={5} required className="w-full border-b-2 border-zinc-200 py-4 outline-none focus:border-black transition-colors bg-transparent resize-none placeholder:text-zinc-300" placeholder="Tell us about your event..."></textarea>
           </div>
 
           <div className="pt-8 flex flex-col md:flex-row md:items-center md:justify-between gap-8">
-            <button type="submit" className="bg-black text-white px-12 py-5 font-bold tracking-[0.2em] uppercase hover:bg-zinc-800 transition-all">
+            <button type="submit" className="bg-black text-white px-12 py-5 font-bold tracking-[0.2em] uppercase hover:bg-zinc-800 transition-all active:scale-95">
               Send Inquiry →
             </button>
           </div>
