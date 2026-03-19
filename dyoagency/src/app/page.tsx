@@ -10,6 +10,7 @@ import Stats from '@/components/Stats';
 import { djs } from '@/data/djs';
 import Link from 'next/link';
 import Image from 'next/image';
+import About from '@/components/About';
 
 export default function Home() {
   const tickerText = "Energy Star Night, Ministry of Sound London,  Streetparade Zurich, Kaufleuten Zürich, Openair Gampel, Aftersun Zetzwil, Hollywood Pattaya, Worldhouse Pattaya, Baccarat Bangkok";
@@ -90,7 +91,7 @@ export default function Home() {
       <ScrollReveal direction="up">
         <Stats />
       </ScrollReveal>
-
+            <About />
       <ScrollReveal direction="up">
         <Contact />
       </ScrollReveal>

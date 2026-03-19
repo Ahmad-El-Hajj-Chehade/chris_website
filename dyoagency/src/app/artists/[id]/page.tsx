@@ -1,14 +1,21 @@
-import SpotifyPlayer from '@/components/SpotifyPlayer';
 import { djs } from '@/data/djs';
 import { Metadata } from 'next';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
-export async function generateStaticParams() {
+
+// Erforderlich für "output: export" - Erstellt die statischen Pfade
+export function generateStaticParams() {
   return djs.map((dj) => ({
     id: dj.id,
   }));
 }
-export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
+
+// Dynamische Metadaten Generierung
+export async function generateMetadata({ 
+  params 
+}: { 
+  params: Promise<{ id: string }> 
+}): Promise<Metadata> {
   const { id } = await params;
   const dj = djs.find((d) => d.id === id);
 
@@ -21,8 +28,8 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
 
   return {
     title: `${dj.name} | Official Booking, Tech Rider & Management`,
-    description: `Book ${dj.name}. ${dj.shortBio}. Exclusive representation by Chris Management. Available for international bookings, festivals, and high-end events. Download Tech Rider and Presskit.`,
-    keywords: `${dj.name}, ${dj.name} Booking, ${dj.name} Management, ${dj.name} Official, ${genreKeywords}, Artist Management Zurich, Switzerland Booking Agency`,
+    description: `Book ${dj.name}. ${dj.shortBio}. Exclusive representation by Chris Management.`,
+    keywords: `${dj.name}, ${dj.name} Booking, ${genreKeywords}, Artist Management Switzerland`,
     openGraph: {
       title: `${dj.name} - Chris Management`,
       description: dj.shortBio,
@@ -32,11 +39,22 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   };
 }
 
-export default async function ArtistPage({ params }: { params: Promise<{ id: string }> }) {
+export default async function ArtistPage({ 
+  params 
+}: { 
+  params: Promise<{ id: string }> 
+}) {
   const { id } = await params;
   const dj = djs.find((d) => d.id === id);
 
   if (!dj) notFound();
+
+  // Logik: Spotify Player nur zeigen, wenn eine Embed-URL vorhanden ist
+  // (Yoyo und Regina haben in djs.ts keine hinterlegt)
+  const hasSpotify = !!dj.spotifyEmbededUrl;
+
+  // Logik: Website-Link für bestimmte Artists ausblenden
+  const hideWebsite = ['yoyo', 'ilona-maras'].includes(dj.id);
 
   return (
     <main className="bg-black text-white min-h-screen pt-40 px-6">
@@ -55,17 +73,19 @@ export default async function ArtistPage({ params }: { params: Promise<{ id: str
             />
           </div>
 
-          {/* Social & Website Links directly under image */}
           <div className="flex flex-wrap gap-4">
-            <a 
-              href={dj.instagram} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="flex-1 text-center px-4 py-3 border border-zinc-800 hover:bg-white hover:text-black transition-all duration-300 uppercase text-[10px] font-bold tracking-[0.2em]"
-            >
-              Instagram
-            </a>
-            {dj.id !== 'ilona-maras' && dj.website && (
+            {dj.instagram && (
+              <a 
+                href={dj.instagram} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex-1 text-center px-4 py-3 border border-zinc-800 hover:bg-white hover:text-black transition-all duration-300 uppercase text-[10px] font-bold tracking-[0.2em]"
+              >
+                Instagram
+              </a>
+            )}
+            
+            {!hideWebsite && dj.website && (
               <a 
                 href={dj.website} 
                 target="_blank" 
@@ -88,21 +108,28 @@ export default async function ArtistPage({ params }: { params: Promise<{ id: str
             {dj.fullBio}
           </p>
 
-          <div className="player-area mb-12">
-            {dj.id !== 'regina-brury' && dj.spotifyId && (
-              <SpotifyPlayer uri={dj.spotifyId ?? ''} />
-            )}
-          </div>
+          {/* Spotify Embed Player */}
+          {hasSpotify && (
+            <div className="mb-12 rounded-xl overflow-hidden bg-transparent border border-zinc-900">
+              <iframe
+                src={dj.spotifyEmbededUrl}
+                width="100%"
+                height="352"
+                frameBorder="0"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+                className="opacity-90 hover:opacity-100 transition-opacity duration-500"
+              />
+            </div>
+          )}
 
           {/* Booking & Presskit Box */}
           <div className="border border-zinc-900 p-10 bg-zinc-950/50 inline-block w-full mt-auto">
-           
-            
             <div className="flex flex-col sm:flex-row gap-6 items-start sm:items-center">
               <a 
                 href={dj.presskit} 
                 target="_blank" 
-                className="bg-white text-black px-10 py-4 font-black hover:bg-zinc-200 transition-all uppercase tracking-tighter text-sm"
+                className="bg-white text-black px-10 py-4 font-black hover:bg-zinc-200 transition-all uppercase tracking-tighter text-sm text-center"
               >
                 Download Presskit
               </a>

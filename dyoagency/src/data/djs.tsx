@@ -2,7 +2,7 @@ export const djs = [
   {
     id: 'dynoro',
     name: 'DYNORO',
-    spotifyId:'5I97xVqU6oRY3ErMUVz4qB?si=b3ad22aadedb4ca0',
+    spotifyEmbededUrl:"https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO229V4N?utm_source=generator&theme=0",
     shortBio: "Diamond & Multi-Platinum Producer",
   fullBio: `Diamond and Multi-Platinum certified Lithuanian DJ and Producer DYNORO began his career in 2018 with his global hit "In My Mind". The single reached #1 on Spotify, Apple Music, and Shazam in 13 countries and dominated the charts for weeks.
 
@@ -16,26 +16,10 @@ After a creative hiatus, he returned with "Monsters" featuring the American rapp
     instagram: 'https://www.instagram.com/dynoro/',
     website: 'https://www.dynoro.com/'
   },
-    {
-  id: "inamar",
-  name: "INAMAR",
-  spotifyId:'7lkMusBtWp0TJe4xTmqVeA?si=d3beb167b7534c5b',
-  shortBio: "Melodic Techno & Progressive House",
-  fullBio: `Zurich-born artist INAMAR produces a bright and sunny form of Melodic Techno and Progressive House. Inspired by the electronic scene in Ibiza, she has developed a sound characterized by relentless drive and melodic precision.
-
-Her discography includes releases on prestigious labels such as Deep Woods (by Pretty Pink) and Sirup Music. Her productions have gained significant endorsements from industry icons, including EDX and David Guetta, who featured her music in his official Spotify selection.
-
-A major milestone in her career was winning the "Change The Beat" remix contest. Her rendition of Eli & Fur’s "Better In the Dark" was officially released on the legendary Anjunadeep label, showcasing her ability to reimagine electronic music at a world-class level.`,
-presskit:"https://inamarmusic.com/media/6mE3o5gKkN/download",  
-image: "/images/inamar.jpg",
-  instagram: 'https://www.instagram.com/inamarmusic/',
-  website: 'https://inamarmusic.com/en'
-
-  },
   {
     id: 'simon-miles',
     name: 'SIMON MILES',
-    spotifyId:'0eJ2KIL6YYTeQ1d4qVxBYp?si=13c33042670a475d',
+    spotifyEmbededUrl: "https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO2iwkjW?utm_source=generator&theme=0",
     shortBio: "International DJ & Electronic Producer",
     fullBio: "The Swiss record producer and DJ Simon Miles has carved a name for himself in the global dance music scene. Headlining shows worldwide, he's become a fixture in renowned venues such as the Ministry of Sound in London (DJ Mag Top 31), NOA Beach Club in Croatia (DJ Mag Top 28), and the iconic Streetparade in Zurich. Simon's chart-topping single, 'Keep Moving,' not only claimed the number one spot but also lead to multiple millions of streams on his discography, establishing him as a force to be reckoned with. His prowess in the studio extends to an official remix for Grammy award winner Mitch Wong, showcasing his versatility and musical finesse. Blessed with a charismatic stage appearance, Simon has played over 250 shows in the past years. His performances have earned him widespread acclaim, attracting the support of industry heavyweights like Nicky Romero and Dimitri Vegas & Like Mike. Simon is a household name in high end clubs, earning recognition from national radio SRF Virus, local TV and press, who have hailed him as one of the most promising Swiss dance exports. Rooted in his Swiss-German heritage, Simon Miles is not just a DJ; he's a beacon of light, as he expressed in an interview with Nexus Dance Radio, spreading hope and positivity through his gospel inspired music. With an ever-growing fan base and a relentless passion for his craft, Simon Miles is set to conquer new heights in the world of electronic dance music.",
     presskit: 'https://www.dropbox.com/sh/5oto1c13xr5okae/AABawQLcqSX7rsQ58YhfEalua?dl=0',
@@ -46,10 +30,20 @@ image: "/images/inamar.jpg",
   {
     id: 'ilona-maras',
     name: 'ILONA MARAS',
-    spotifyId:'4fHUOAidhnX0PGcXHyOXDj?si=d162b29cd3dc4454',
+    spotifyEmbededUrl: "https://open.spotify.com/embed/album/6d4PX64482Zkkystu5J10O?utm_source=generator&theme=0",
    shortBio: "Techno & House Artist",
-    fullBio: "Ilona Maras is a DJ & producer with a love for electronic music that began at a young age. She has made a name for herself in the industry by creating a diverse and complex sound that incorporates Eastern melodies, breakbeat, house, and acid sounds.\n\nShe has played at some of the most iconic clubs and festivals worldwide, including Zurich Street Parade, Ministry Of Sound, Relevance Festival Copenhagen, Backyard Sessions Malmo, and Space Monkey. She is currently a resident DJ at Hive, one of the most symbolic techno clubs in Switzerland. Her tracks have been released on respected labels such as Filth on Acid, Get Physical, and Selador, receiving support from industry legends like Pete Tong and Nicole Moudaber.\n\nIlona's debut release 'Existe' on Get Physical Music brought her into the limelight- leading to her inclusion in DJ Mag's 'Top 6 Artists to Watch Out For' list. Known for her energetic and emotional performances, she continues to be a driving force in the global electronic music scene.",
-            presskit: "https://www.dropbox.com/scl/fo/9stjd1hbcp8ndavcoogcn/AINUNoARGO47dH57e9crvx0?rlkey=ewivqzuwgc715mh0njqgseamk&st=73j90ezg&dl=0",
+   fullBio: `
+      Introducing Ilona Maras, a dynamic force in the electronic music realm, blending her Montenegrin and Russian roots into a harmonious fusion of sound. From an early age, Ilona's heart resonated with the rhythms of electronic melodies, igniting a passion that has since propelled her to the forefront of the global DJ and producer circuit.
+
+      Her sonic spectrum weaves together Eastern melodies, raw journeys of breakbeat, house, and acid sounds, resulting in a rich and diverse musical landscape that captivates audiences worldwide. Her sets radiate a defining principle she lives by: Energy is the most important element in the entire musical cycle; it connects artist, dancefloor, and moment into one evolving pulse.
+
+      With a career spanning iconic clubs and festivals across the globe—from the pulsating streets of Zurich's Street Parade to legendary labels like Ministry Of Sound, ADE, and Space Monkey—Ilona's electrifying performances leave an indelible mark on every dancefloor she graces. As a resident DJ at Hive, Switzerland's emblematic techno sanctuary, she commands the decks with unparalleled energy and emotion.
+
+      Her tracks, released on esteemed labels such as Get Physical, Sony, Filth on Acid, and We Are The Brave, have garnered widespread acclaim, earning support from industry luminaries like Richie Hawtin, Pete Tong, and Nicole Moudaber. Ilona's journey into production culminated in her debut release, "Existe," which thrust her into the limelight and earned her a coveted spot on DJ Mag's "Top 6 Artists to Watch Out For" list. 
+
+      She is also the growing vision of Quan2m, a forward-thinking music platform and label where her upcoming works continue to explore new sonic territory. With relentless dedication to her craft, Ilona Maras continues to carve her legacy as a pioneering figure in the global electronic music scene, uniting audiences in a shared euphoria.
+    `,
+           presskit: "https://www.dropbox.com/scl/fo/9stjd1hbcp8ndavcoogcn/AINUNoARGO47dH57e9crvx0?rlkey=ewivqzuwgc715mh0njqgseamk&st=73j90ezg&dl=0",
             image: '/images/Ilona Maras.jpg',
         instagram: 'https://www.instagram.com/ilonamaras/',
   },
@@ -68,6 +62,23 @@ With her debut solo single "3 Big Words" fully produced and release-ready, Regin
     presskit:'/regina-brury-presskit-2026.pdf',
     instagram: 'https://www.instagram.com/reginabrury/',
     website:'https://www.reginabrury.ch/'
+  },
+     {
+  id: "yoyo",
+  name: "YOYO ",
+  shortBio: "Open Format DJ",
+ fullBio: `
+      Yoyo is an open-format DJ from Bern, Switzerland, known for his dynamic energy and unique ability to connect with a diverse audience. With a deep passion for music and a keen sense of the crowd’s mood, he creates sets that seamlessly blend genres and generate a lively, infectious atmosphere on any dance floor.
+
+      His musical style is defined by versatility. Yoyo moves effortlessly between styles and eras, combining carefully selected tracks with spontaneous transitions, resulting in performances that feel both fresh and authentic. Every set is a unique experience, driven by intuition, creativity, and a strong sense of rhythm.
+
+      For Yoyo, music is more than just entertainment—it is a powerful form of communication. His performances bring people together, transcend boundaries, and create shared moments that resonate long after the night is over. This ability to unite the audience and maintain high energy throughout his sets has quickly earned him recognition in the local scene.
+
+      With a growing presence and a clear artistic vision, Yoyo continues to establish himself as a DJ to watch, delivering unforgettable performances that turn events into lasting experiences.
+    `,presskit:"/Press Kit Yoyo 3.pdf",  
+image: "/images/yoyo.jpeg",
+  instagram: 'https://www.instagram.com/officialyoyo__/',
+
   },
    {
     id: 'future-artist',
