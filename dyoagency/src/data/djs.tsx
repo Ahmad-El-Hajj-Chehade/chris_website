@@ -11,7 +11,7 @@ The track received heavy rotation on US dance radio and entered the official US 
 Following this success, DYNORO secured further hits with "Obsessed" (feat. Ina Wroldsen), the collaboration "On & On" with Alok, and the single "Rockstar" with EDM heavyweight Ilkay Sencan. 
 
 After a creative hiatus, he returned with "Monsters" featuring the American rapper and songwriter 24kGoldn. His latest announcement, "Swimming In Your Eyes", marks the next chapter of his evolution in the global electronic music scene.`,
-    dropbox: 'https://www.dropbox.com/scl/fo/vu59nvvwlqx073soevw5y/AG1nTb8o0kEDnaficVSpm9I?rlkey=j80xmjod17z47u6iz0g3g253d&e=1&st=usd74xdc&dl=0',
+    presskit: 'https://www.dropbox.com/scl/fo/vu59nvvwlqx073soevw5y/AG1nTb8o0kEDnaficVSpm9I?rlkey=j80xmjod17z47u6iz0g3g253d&e=1&st=1ll7498x&dl=0',
    image: '/images/dynoro.jpg',
     instagram: 'https://www.instagram.com/dynoro/',
     website: 'https://www.dynoro.com/'
@@ -24,8 +24,8 @@ After a creative hiatus, he returned with "Monsters" featuring the American rapp
     fullBio: "The Swiss record producer and DJ Simon Miles has carved a name for himself in the global dance music scene. Headlining shows worldwide, he's become a fixture in renowned venues such as the Ministry of Sound in London (DJ Mag Top 31), NOA Beach Club in Croatia (DJ Mag Top 28), and the iconic Streetparade in Zurich. Simon's chart-topping single, 'Keep Moving,' not only claimed the number one spot but also lead to multiple millions of streams on his discography, establishing him as a force to be reckoned with. His prowess in the studio extends to an official remix for Grammy award winner Mitch Wong, showcasing his versatility and musical finesse. Blessed with a charismatic stage appearance, Simon has played over 250 shows in the past years. His performances have earned him widespread acclaim, attracting the support of industry heavyweights like Nicky Romero and Dimitri Vegas & Like Mike. Simon is a household name in high end clubs, earning recognition from national radio SRF Virus, local TV and press, who have hailed him as one of the most promising Swiss dance exports. Rooted in his Swiss-German heritage, Simon Miles is not just a DJ; he's a beacon of light, as he expressed in an interview with Nexus Dance Radio, spreading hope and positivity through his gospel inspired music. With an ever-growing fan base and a relentless passion for his craft, Simon Miles is set to conquer new heights in the world of electronic dance music.",
     presskit: 'https://www.dropbox.com/sh/5oto1c13xr5okae/AABawQLcqSX7rsQ58YhfEalua?dl=0',
     image: '/images/simon_miles.jpg',
-    instagram: 'https://instagram.com/simonmiles',
-    website: 'https://simonmiles.com'
+    instagram: 'https://www.instagram.com/simonmilesmusic/',
+    website: 'https://simonmilesmusic.com'
   },
   {
     id: 'ilona-maras',
