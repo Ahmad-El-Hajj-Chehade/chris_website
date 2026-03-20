@@ -36,7 +36,7 @@ export default function About() {
             {/* CEO Profil Text integriert in die linke Spalte */}
             <div className="pt-8 border-t border-zinc-900 space-y-4">
               <h4 className="text-2xl font-bold uppercase tracking-tighter">Christian Lüdi</h4>
-              <p className="text-[10px] uppercase tracking-[0.3em] text-zinc-500 font-bold">CEO & Founder</p>
+              <p className="text-[10px] uppercase tracking-[0.3em] text-zinc-500 font-bold"> Founder</p>
               <div className="space-y-4 text-zinc-400 leading-relaxed">
                 <p>
                   Born in Switzerland, I live my passion for music and entrepreneurship with curiosity and drive.
@@ -55,12 +55,14 @@ export default function About() {
             viewport={{ once: true }}
             className="relative aspect-[4/5] w-full overflow-hidden bg-zinc-900 border border-zinc-800"
           >
+           
             <Image 
               src="/images/chris.jpg" 
-              alt="Christian Lüdi - CEO & Founder"
+              alt="Christian Lüdi - Founder"
+              
               fill
               className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
-              sizes="(max-width: 1024px) 100vw, 50vw"
+    sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </motion.div>
         </div>
