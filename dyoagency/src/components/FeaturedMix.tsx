@@ -1,5 +1,4 @@
 'use client';
-import { motion } from 'framer-motion';
 
 export default function FeaturedMix() {
   return (
@@ -13,6 +12,8 @@ export default function FeaturedMix() {
             scrolling="no" 
             frameBorder="no" 
             allow="autoplay" 
+            loading="lazy"
+            title="Featured Mix Player"
             src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/123456789&color=%23000000&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false"
             className="grayscale opacity-80 hover:opacity-100 transition-opacity"
           ></iframe>

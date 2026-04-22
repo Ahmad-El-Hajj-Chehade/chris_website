@@ -40,7 +40,9 @@ export default function ScrollReveal({ children, direction = 'up' }: Props) {
   return (
     <motion.div
       ref={ref}
+      className="relative"
       style={{ 
+        position: 'relative',
         opacity, 
         scale,
         x,

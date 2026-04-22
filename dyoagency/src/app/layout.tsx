@@ -1,27 +1,19 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from '@/components/Navbar';
 import ScrollToTop from "@/components/ScrollToTop";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 const inter = Inter({
   subsets: ['latin'],
-  display: 'swap', // Verhindert "Layout Shift" beim Laden
+  display: 'swap',
+  fallback: ['system-ui', 'arial'],
 });
 
 export const metadata: Metadata = {
-title: 'CHRIS MANAGEMENT | Booking Agency & Artist Management | Zurich',
+  metadataBase: new URL('https://dyoagency.com'),
+  title: 'CHRIS MANAGEMENT | Booking Agency & Artist Management | Zurich',
   description: 'Leading boutique agency for Electronic Music (Techno, House) and Acoustic Pop. Representing DYNORO, INAMAR, Regina Brury and more. Book elite DJs and Singers for international events, festivals and clubs.',
   keywords: [
     'Artist Management Switzerland', 'Booking Agency Zurich', 'Electronic Music Agency', 
@@ -61,6 +53,12 @@ title: 'CHRIS MANAGEMENT | Booking Agency & Artist Management | Zurich',
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`scroll-smooth ${inter.className}`}>
+      <head>
+        <link rel="preconnect" href="https://open.spotify.com" crossOrigin="" />
+        <link rel="preconnect" href="https://w.soundcloud.com" crossOrigin="" />
+        <link rel="dns-prefetch" href="https://open.spotify.com" />
+        <link rel="dns-prefetch" href="https://w.soundcloud.com" />
+      </head>
       <body className="bg-black antialiased text-white">
         <Navbar />
         {children}

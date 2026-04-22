@@ -1,15 +1,16 @@
 'use client';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { useCallback } from 'react';
 
 const services = [
-  { title: "Artist Management", value: "Booking", desc: "Strategic career development and placement on global mainstages and clubs.", image: "/images/management.jpg" },
+  { title: "Artist Management", value: "Management", desc: "Strategic career development and placement on global mainstages and clubs, label and press negotiation.", image: "/images/management.jpg" },
   { title: "Touring", value: "Touring", desc: "Full logistics, travel coordination, and technical rider fulfillment worldwide.", image: "/images/touring.jpg" },
   { title: "Content Production", value: "Content", desc: "Visual identity, social media scaling, and professional media production.", image: "/images/media.jpg"},
 ];
 
 export default function Services() {
-  const handleServiceClick = (value: string) => {
+  const handleServiceClick = useCallback((value: string) => {
     // Sende ein Custom Event mit dem gewählten Thema
     const event = new CustomEvent('setContactSubject', { detail: value });
     window.dispatchEvent(event);
@@ -19,7 +20,7 @@ export default function Services() {
     if (contactSection) {
       contactSection.scrollIntoView({ behavior: 'smooth' });
     }
-  };
+  }, []);
 
   return (
     <section id="services" className="py-24 px-6 bg-zinc-950 border-y border-zinc-900">
@@ -37,7 +38,15 @@ export default function Services() {
               onClick={() => handleServiceClick(service.value)}
             >
               <div className="relative h-64 w-full mb-6 overflow-hidden bg-zinc-900 grayscale group-hover:grayscale-0 transition-all duration-500">
-                <Image src={service.image} alt={service.title} fill className="object-cover transition-transform duration-500 group-hover:scale-105" sizes="(max-width: 768px) 100vw, 33vw" />
+                <Image
+                  src={service.image}
+                  alt={service.title}
+                  fill
+                  priority={i < 2}
+                  loading={i < 2 ? undefined : 'lazy'}
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
               </div>
               <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
               <p className="text-zinc-400 leading-relaxed">{service.desc}</p>

@@ -41,7 +41,7 @@ export default function Footer() {
             Premier Music Agency
           </div>
         </div>
-        <div className="mt-0 opacity-0 h-0 overflow-hidden">
+        <div className="sr-only">
   <h2>Global Booking Agency for DJs and Singers</h2>
   <p>Representing artists in Techno, Melodic House, Progressive, and Acoustic Pop. 
      Based in Zurich, Switzerland, serving international festivals and clubs. 

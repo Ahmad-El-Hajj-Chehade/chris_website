@@ -7,8 +7,9 @@ export default function Contact() {
 
   // Lauscht auf das Event von der Services.tsx
   useEffect(() => {
-    const handleSetSubject = (event: any) => {
-      setSubject(event.detail);
+    const handleSetSubject = (event: Event) => {
+      const customEvent = event as CustomEvent<string>;
+      setSubject(customEvent.detail);
     };
 
     window.addEventListener('setContactSubject', handleSetSubject);
@@ -74,12 +75,12 @@ export default function Contact() {
                 <option value="Booking">Booking</option>
                 <option value="Content">Content</option>
                 <option value="Touring">Touring</option>
-                <option value="Other">Other</option>
+                <option value="Management">Management</option>
               </select>
             </div>
           </div>
 
-          {subject === 'Other' && (
+          {subject === 'Management' && (
             <motion.div 
               initial={{ opacity: 0, y: -10 }} 
               animate={{ opacity: 1, y: 0 }} 

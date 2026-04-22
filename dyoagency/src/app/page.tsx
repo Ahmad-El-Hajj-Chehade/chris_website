@@ -1,19 +1,22 @@
+import dynamic from 'next/dynamic';
 import Hero from '@/components/Hero';
 import Ticker from '@/components/Ticker'; 
 import Services from '@/components/Services';
-import Gallery from '@/components/Gallery';
-import Contact from '@/components/Contact';
-import Footer from '@/components/Footer';
 import ScrollReveal from '@/components/ScrollReveal';
-import Stats from '@/components/Stats';
 
 import { djs } from '@/data/djs';
 import Link from 'next/link';
 import Image from 'next/image';
 import About from '@/components/About';
 
+// Lazy-loaded componenten
+const Gallery = dynamic(() => import('@/components/Gallery'), { loading: () => <div className="h-96 bg-zinc-900" /> });
+const Stats = dynamic(() => import('@/components/Stats'));
+const Contact = dynamic(() => import('@/components/Contact'));
+const Footer = dynamic(() => import('@/components/Footer'));
+
 export default function Home() {
-  const tickerText = "Energy Star Night, Ministry of Sound London,  Streetparade Zurich, Kaufleuten Zürich, Openair Gampel, Aftersun Zetzwil, Hollywood Pattaya, Worldhouse Pattaya, Baccarat Bangkok";
+  const tickerText = "Energy Star Night, Ministry of Sound London,  Streetparade Zurich, Kaufleuten Zurich, Openair Gampel, Aftersun Zetzwil, Hollywood Pattaya, Worldhouse Pattaya, Baccarat Bangkok";
 
   return (
     <main className="bg-black text-white min-h-screen">
@@ -32,7 +35,7 @@ export default function Home() {
       <section id="artists" className="pt-24 pb-0 px-6 max-w-7xl mx-auto">
         <ScrollReveal direction="up">
           <h2 className="text-sm uppercase tracking-[0.4em] text-zinc-400 mb-12 text-center md:text-left">
-            Roster
+            Artists
           </h2>
         </ScrollReveal>
 

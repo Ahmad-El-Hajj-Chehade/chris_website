@@ -28,26 +28,6 @@ After a creative hiatus, he returned with "Monsters" featuring the American rapp
     website: 'https://simonmilesmusic.com'
   },
   {
-    id: 'ilona-maras',
-    name: 'ILONA MARAS',
-    spotifyEmbededUrl: "https://open.spotify.com/embed/album/6d4PX64482Zkkystu5J10O?utm_source=generator&theme=0",
-   shortBio: "Techno & House Artist",
-   fullBio: `
-      Introducing Ilona Maras, a dynamic force in the electronic music realm, blending her Montenegrin and Russian roots into a harmonious fusion of sound. From an early age, Ilona's heart resonated with the rhythms of electronic melodies, igniting a passion that has since propelled her to the forefront of the global DJ and producer circuit.
-
-      Her sonic spectrum weaves together Eastern melodies, raw journeys of breakbeat, house, and acid sounds, resulting in a rich and diverse musical landscape that captivates audiences worldwide. Her sets radiate a defining principle she lives by: Energy is the most important element in the entire musical cycle; it connects artist, dancefloor, and moment into one evolving pulse.
-
-      With a career spanning iconic clubs and festivals across the globe—from the pulsating streets of Zurich's Street Parade to legendary labels like Ministry Of Sound, ADE, and Space Monkey—Ilona's electrifying performances leave an indelible mark on every dancefloor she graces. As a resident DJ at Hive, Switzerland's emblematic techno sanctuary, she commands the decks with unparalleled energy and emotion.
-
-      Her tracks, released on esteemed labels such as Get Physical, Sony, Filth on Acid, and We Are The Brave, have garnered widespread acclaim, earning support from industry luminaries like Richie Hawtin, Pete Tong, and Nicole Moudaber. Ilona's journey into production culminated in her debut release, "Existe," which thrust her into the limelight and earned her a coveted spot on DJ Mag's "Top 6 Artists to Watch Out For" list. 
-
-      She is also the growing vision of Quan2m, a forward-thinking music platform and label where her upcoming works continue to explore new sonic territory. With relentless dedication to her craft, Ilona Maras continues to carve her legacy as a pioneering figure in the global electronic music scene, uniting audiences in a shared euphoria.
-    `,
-           presskit: "https://www.dropbox.com/scl/fo/9stjd1hbcp8ndavcoogcn/AINUNoARGO47dH57e9crvx0?rlkey=ewivqzuwgc715mh0njqgseamk&st=73j90ezg&dl=0",
-            image: '/images/Ilona Maras.jpg',
-        instagram: 'https://www.instagram.com/ilonamaras/',
-  },
-  {
     id: "regina-brury",
     name: "REGINA BRURY",
     shortBio: "Romantic Acoustic Pop & Singer-Songwriter",

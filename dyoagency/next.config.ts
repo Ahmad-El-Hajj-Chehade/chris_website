@@ -9,8 +9,12 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   
-  /* Deine bestehenden Optionen */
   reactCompiler: true,
+  
+  /* Optimiert Bundle-Größe */
+  experimental: {
+    optimizePackageImports: ['framer-motion'],
+  }
 };
 
 export default nextConfig;

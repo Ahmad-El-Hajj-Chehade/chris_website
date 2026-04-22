@@ -1,32 +1,30 @@
-'use client';
-import { motion } from 'framer-motion';
-
 interface TickerProps {
   text: string;
 }
 
 export default function Ticker({ text }: TickerProps) {
-  // Wir hängen einen Trenner direkt an den Text an
-  const tickerContent = `${text} • `;
+  const items = text
+    .split(',')
+    .map((item) => item.trim())
+    .filter(Boolean);
 
   return (
     <div className="bg-white py-4 overflow-hidden whitespace-nowrap border-y border-white flex">
-      <motion.div
-        className="flex"
-        animate={{ x: ["0%", "-50%"] }} // Nutze Prozent für lückenlosen Übergang
-        transition={{
-          repeat: Infinity,
-          ease: "linear",
-          duration: 180, // Geschwindigkeit bei Bedarf anpassen
-        }}
-      >
-        {/* Zwei Kopien genügen oft für den -50% Trick, 4 zur Sicherheit bei kurzem Text */}
-        {[...Array(6)].map((_, i) => (
-          <span key={i} className="text-black text-sm font-bold uppercase tracking-[0.4em] inline-block">
-            {tickerContent}
-          </span>
+      <div className="flex min-w-max ticker-track" aria-label="Event ticker">
+        {[0, 1].map((cloneIndex) => (
+          <div key={cloneIndex} className="flex items-center shrink-0">
+            {items.map((item, itemIndex) => (
+              <span
+                key={`${cloneIndex}-${item}-${itemIndex}`}
+                className="inline-flex items-center text-black text-sm font-bold uppercase tracking-[0.32em]"
+              >
+                {item}
+                <span className="mx-6 text-black/70">•</span>
+              </span>
+            ))}
+          </div>
         ))}
-      </motion.div>
+      </div>
     </div>
   );
 }

@@ -4,18 +4,19 @@ import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const staticImages = [
-  { image: "/images/gallery_4.jpg" },
-  { image: "/images/gallery_2.jpg" },
-  { image: "/images/gallery_3.jpg" },
-  { image: "/images/gallery_5.jpg" },
-  { image: "/images/gallery_6.jpg" },
-  { image: "/images/gallery_1.jpg" },
+  { image: "/images/gallery_4.jpg", orientation: "portrait" },
+  { image: "/images/gallery_2.jpg", orientation: "landscape" },
+  { image: "/images/gallery_3.jpg", orientation: "portrait" },
+  { image: "/images/gallery_5.jpg", orientation: "landscape" },
+  { image: "/images/gallery_6.jpg", orientation: "portrait" },
+  { image: "/images/gallery_1.jpg", orientation: "landscape" },
 ];
 
 const generatedImages = Array.from({ length: 32 }, (_, i) => {
   const num = i + 1;
   const fileName = num < 10 ? `0${num}` : `${num}`;
-  return { image: `/images/${fileName}.jpg` };
+  const orientation = i % 3 === 0 ? "landscape" : "portrait";
+  return { image: `/images/${fileName}.jpg`, orientation };
 });
 
 const allImages = [...staticImages, ...generatedImages];
@@ -31,27 +32,23 @@ export default function Gallery() {
       </h2>
       
       <div className="relative">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-[250px]">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-[280px]">
           <AnimatePresence>
             {visibleImages.map((item, i) => {
-              // Logik: Jedes 4. Bild nimmt 2 Spalten ein (Querformat-Effekt)
-              const isWide = i % 5 === 0;
-              
               return (
                 <motion.div
                   key={item.image}
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5, delay: i * 0.05 }}
-                  className={`relative overflow-hidden bg-zinc-900 border border-zinc-900 
-                    ${isWide ? 'col-span-2' : 'col-span-1'}`}
+                  className="relative overflow-hidden bg-zinc-900 border border-zinc-900"
                 >
                   <Image
                     src={item.image}
                     alt="Artist Moment"
                     fill
-                    className="object-cover grayscale hover:grayscale-0 transition-all duration-700 hover:scale-110"
-                    sizes={isWide ? "(max-width: 768px) 100vw, 50vw" : "(max-width: 768px) 50vw, 25vw"}
+                    className="object-cover grayscale hover:grayscale-0 transition-all duration-700 hover:scale-105"
+                    sizes="(max-width: 768px) 50vw, 25vw"
                   />
                 </motion.div>
               );

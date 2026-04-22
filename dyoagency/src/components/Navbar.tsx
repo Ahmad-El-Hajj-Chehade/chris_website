@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { useCallback } from 'react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -14,6 +15,14 @@ export default function Navbar() {
     { name: 'Contact', href: '/#contact' },
   ];
 
+  const handleNavClick = useCallback(() => {
+    setIsOpen(false);
+  }, []);
+
+  const handleToggleMenu = useCallback(() => {
+    setIsOpen(prev => !prev);
+  }, []);
+
   return (
     <nav className="fixed top-0 w-full z-[100] bg-black/80 backdrop-blur-md border-b border-zinc-900">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between relative">
@@ -21,7 +30,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link 
           href="/" 
-          onClick={() => setIsOpen(false)}
+          onClick={handleNavClick}
           className="text-lg font-black uppercase tracking-tighter text-white z-[110]"
         >
           Chris <span className="text-zinc-600">Management</span>
@@ -29,7 +38,7 @@ export default function Navbar() {
 
         {/* Burger Button */}
         <button 
-          onClick={() => setIsOpen(!isOpen)}
+          onClick={handleToggleMenu}
           className="md:hidden z-[110] flex flex-col justify-center items-end w-8 h-8 outline-none"
         >
           <motion.span 
@@ -74,7 +83,7 @@ export default function Navbar() {
                   <Link 
                     key={link.name} 
                     href={link.href}
-                    onClick={() => setIsOpen(false)}
+                    onClick={handleNavClick}
                     className="block text-2xl font-black uppercase tracking-tighter text-white border-b border-zinc-900/50 pb-4 last:border-0 last:pb-0"
                   >
                     {link.name}
