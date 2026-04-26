@@ -4,23 +4,23 @@ import { motion } from 'framer-motion';
 
 export default function About() {
   return (
-    <section id="about" className="py-32 px-6 bg-black text-white border-t border-zinc-900">
+    <section id="about" className="py-20 md:py-32 px-4 sm:px-6 bg-black text-white border-t border-zinc-900">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           
           {/* Linke Spalte: Kompletter Text */}
           <motion.div 
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="space-y-12"
+            className="space-y-10 md:space-y-12"
           >
             <div className="space-y-6">
-              <h2 className="text-sm uppercase tracking-[0.4em] text-zinc-500">About Chris Management</h2>
-              <h3 className="text-4xl md:text-5xl font-black uppercase tracking-tighter leading-tight">
+              <h2 className="text-xs sm:text-sm uppercase tracking-[0.3em] sm:tracking-[0.4em] text-zinc-500">About Chris Management</h2>
+              <h3 className="text-3xl sm:text-4xl md:text-5xl font-black uppercase tracking-tighter leading-tight">
                 The Fusion of Passion and Professionalism
               </h3>
-              <div className="space-y-6 text-zinc-400 leading-relaxed text-lg">
+              <div className="space-y-5 sm:space-y-6 text-zinc-400 leading-relaxed text-base md:text-lg">
                 <p>
                   Since 2025, Chris Management has stood for much more than classic artist management. With a clear vision, genuine passion, and a strong international network, we connect artists worldwide with promoters who value quality, reliability, and exceptional live performances.
                 </p>
@@ -35,7 +35,7 @@ export default function About() {
 
             {/* CEO Profil Text integriert in die linke Spalte */}
             <div className="pt-8 border-t border-zinc-900 space-y-4">
-              <h4 className="text-2xl font-bold uppercase tracking-tighter">Christian Lüdi</h4>
+              <h4 className="text-xl sm:text-2xl font-bold uppercase tracking-tighter">Christian Lüdi</h4>
               <p className="text-[10px] uppercase tracking-[0.3em] text-zinc-500 font-bold"> Founder</p>
               <div className="space-y-4 text-zinc-400 leading-relaxed">
                 <p>
@@ -62,7 +62,7 @@ export default function About() {
               priority
               
               fill
-              className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
+              className="object-cover object-top grayscale hover:grayscale-0 transition-all duration-700"
     sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </motion.div>

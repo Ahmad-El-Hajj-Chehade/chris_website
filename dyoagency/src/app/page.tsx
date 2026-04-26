@@ -69,7 +69,7 @@ export default function Home() {
                       src={dj.image} 
                       alt={dj.name} 
                       fill 
-                      className="object-cover grayscale group-hover:grayscale-0 scale-100 group-hover:scale-110 transition-all duration-[1.2s] ease-[0.22, 1, 0.36, 1]" 
+                      className={`object-cover grayscale group-hover:grayscale-0 scale-100 group-hover:scale-110 transition-all duration-[1.2s] ease-[0.22, 1, 0.36, 1] ${['simon-miles', 'dynoro'].includes(dj.id) ? 'object-top' : ''}`} 
                       sizes="(max-width: 768px) 100vw, 33vw" 
                     />
                     <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />

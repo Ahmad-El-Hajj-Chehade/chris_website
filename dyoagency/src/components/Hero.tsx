@@ -14,7 +14,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative h-screen w-full overflow-hidden bg-black">
+    <section className="relative h-[92vh] md:h-screen w-full overflow-hidden bg-black">
       {/* Hintergrundvideo */}
       <video
         autoPlay
@@ -28,13 +28,13 @@ export default function Hero() {
       </video>
 
       {/* Content Overlay */}
-      <div className="relative z-10 flex h-full flex-col items-center justify-center px-6">
+      <div className="relative z-10 flex h-full flex-col items-center justify-center px-4 sm:px-6">
         <div className="overflow-hidden">
           <motion.h1 
             initial={{ y: "100%" }}
             animate={{ y: 0 }}
             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-            className="text-6xl md:text-[120px] font-black uppercase tracking-tighter text-white leading-none"
+            className="text-4xl sm:text-6xl md:text-[120px] font-black uppercase tracking-tighter text-white leading-[0.95] text-center"
           >
             {title}
           </motion.h1>
@@ -45,7 +45,7 @@ export default function Hero() {
             initial={{ y: "100%" }}
             animate={{ y: 0 }}
             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
-            className="text-xs md:text-sm uppercase tracking-[0.6em] text-zinc-400 text-center"
+            className="text-[10px] sm:text-xs md:text-sm uppercase tracking-[0.24em] sm:tracking-[0.4em] md:tracking-[0.6em] text-zinc-400 text-center"
           >
             {subtitle}
           </motion.p>
@@ -60,9 +60,9 @@ export default function Hero() {
         transition={{ duration: 1, delay: 1 }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 group"
+        className="absolute bottom-6 md:bottom-10 left-1/2 -translate-x-1/2 z-20 group"
       >
-        <div className="relative w-14 h-14 flex items-center justify-center border border-white/20 rounded-full group-hover:border-white transition-colors duration-500">
+        <div className="relative w-12 h-12 md:w-14 md:h-14 flex items-center justify-center border border-white/20 rounded-full group-hover:border-white transition-colors duration-500">
           <svg 
             width="20" 
             height="20" 

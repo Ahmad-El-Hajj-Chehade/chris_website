@@ -67,7 +67,7 @@ export default async function ArtistPage({
               src={dj.image ?? '/placeholder-image.jpg'} 
               alt={`${dj.name} - Official Artist Photo`} 
               fill 
-              className="object-cover" 
+              className={['simon-miles', 'dynoro'].includes(dj.id) ? 'object-cover object-top' : 'object-cover'} 
               priority 
               sizes="(max-width: 768px) 100vw, 50vw"
             />

@@ -12,7 +12,7 @@ const staticImages = [
   { image: "/images/gallery_1.jpg", orientation: "landscape" },
 ];
 
-const generatedImages = Array.from({ length: 32 }, (_, i) => {
+const generatedImages = Array.from({ length: 30 }, (_, i) => {
   const num = i + 1;
   const fileName = num < 10 ? `0${num}` : `${num}`;
   const orientation = i % 3 === 0 ? "landscape" : "portrait";

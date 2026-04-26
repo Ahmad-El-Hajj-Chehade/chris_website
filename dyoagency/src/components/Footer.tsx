@@ -1,22 +1,22 @@
 export default function Footer() {
   return (
-    <footer className="bg-black text-zinc-600 py-24 px-6 border-t border-zinc-900">
+    <footer className="bg-black text-zinc-600 py-16 md:py-24 px-4 sm:px-6 border-t border-zinc-900">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-start gap-16 mb-24">
+        <div className="flex flex-col md:flex-row justify-between items-start gap-12 md:gap-16 mb-16 md:mb-24">
           
           {/* Linke Seite: Große Typografie als Statement */}
           <div className="max-w-md">
-            <h3 className="text-white font-black tracking-tighter text-3xl uppercase mb-6">
+            <h3 className="text-white font-black tracking-tighter text-2xl sm:text-3xl uppercase mb-5 sm:mb-6">
               Chris <span className="text-zinc-700">Management</span>
             </h3>
-            <p className="text-sm leading-relaxed uppercase tracking-widest text-zinc-500">
+            <p className="text-xs sm:text-sm leading-relaxed uppercase tracking-[0.14em] sm:tracking-widest text-zinc-500">
               International talent representation for the music industry. 
               Bridging elite artists and global stages.
             </p>
           </div>
 
           {/* Rechte Seite: Strukturierte Links */}
-          <div className="grid grid-cols-2 gap-12 md:gap-24">
+          <div className="grid grid-cols-2 gap-8 sm:gap-12 md:gap-24">
            
             
             <div className="space-y-4">
@@ -30,14 +30,14 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-12 border-t border-zinc-900 flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="flex items-center space-x-4">
-            <span className="text-[10px] uppercase tracking-[0.3em]">© 2026 Chris Management</span>
+        <div className="pt-8 md:pt-12 border-t border-zinc-900 flex flex-col md:flex-row justify-between items-center gap-5 md:gap-6">
+          <div className="flex items-center flex-wrap justify-center md:justify-start gap-x-3 gap-y-2">
+            <span className="text-[10px] uppercase tracking-[0.26em] sm:tracking-[0.3em]">© 2026 Chris Management</span>
             <span className="w-1 h-1 bg-zinc-800 rounded-full hidden md:block"></span>
-            <span className="text-[10px] uppercase tracking-[0.3em] text-zinc-800 italic">Built in Switzerland</span>
+            <span className="text-[10px] uppercase tracking-[0.26em] sm:tracking-[0.3em] text-zinc-800 italic">Built in Switzerland</span>
           </div>
           
-          <div className="text-[10px] uppercase tracking-[0.3em] font-bold text-white bg-zinc-900 px-4 py-2 rounded-sm">
+          <div className="text-[10px] uppercase tracking-[0.26em] sm:tracking-[0.3em] font-bold text-white bg-zinc-900 px-4 py-2 rounded-sm">
             Premier Music Agency
           </div>
         </div>

@@ -43,8 +43,14 @@ body {
 }
 
 .ticker-track {
-  animation: ticker-scroll 140s linear infinite;
+  animation: ticker-scroll 90s linear infinite;
   will-change: transform;
+}
+
+@media (max-width: 768px) {
+  .ticker-track {
+    animation-duration: 65s;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

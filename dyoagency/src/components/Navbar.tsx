@@ -25,15 +25,15 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 w-full z-[100] bg-black/80 backdrop-blur-md border-b border-zinc-900">
-      <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between relative">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between relative">
         
         {/* Logo */}
         <Link 
           href="/" 
           onClick={handleNavClick}
-          className="text-lg font-black uppercase tracking-tighter text-white z-[110]"
+          className="text-base sm:text-lg font-black uppercase tracking-tighter text-white z-[110]"
         >
-          Chris <span className="text-zinc-600">Management</span>
+          Chris <span className="hidden sm:inline text-zinc-600">Management</span><span className="sm:hidden text-zinc-600">Mgmt</span>
         </Link>
 
         {/* Burger Button */}
@@ -56,7 +56,7 @@ export default function Navbar() {
         </button>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex space-x-8 text-[12px] font-bold uppercase tracking-[0.3em] text-zinc-400">
+        <div className="hidden md:flex space-x-6 lg:space-x-8 text-[11px] lg:text-[12px] font-bold uppercase tracking-[0.25em] lg:tracking-[0.3em] text-zinc-400">
           {navLinks.map((link) => (
             <Link key={link.name} href={link.href} className="hover:text-white transition-colors">
               {link.name}
@@ -71,20 +71,20 @@ export default function Navbar() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="fixed inset-0 bg-black/60 backdrop-blur-xl z-[100] flex flex-col pt-32 px-6"
+              className="fixed inset-0 bg-black/60 backdrop-blur-xl z-[100] flex flex-col pt-24 sm:pt-32 px-4 sm:px-6"
             >
               {/* Listen-Container mit eigenem Hintergrund für bessere Lesbarkeit */}
               <motion.div 
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
-                className="bg-zinc-950/80 border border-zinc-900 p-8 rounded-2xl shadow-2xl space-y-6"
+                className="bg-zinc-950/80 border border-zinc-900 p-6 sm:p-8 rounded-2xl shadow-2xl space-y-5 sm:space-y-6"
               >
                 {navLinks.map((link) => (
                   <Link 
                     key={link.name} 
                     href={link.href}
                     onClick={handleNavClick}
-                    className="block text-2xl font-black uppercase tracking-tighter text-white border-b border-zinc-900/50 pb-4 last:border-0 last:pb-0"
+                    className="block text-xl sm:text-2xl font-black uppercase tracking-tighter text-white border-b border-zinc-900/50 pb-4 last:border-0 last:pb-0"
                   >
                     {link.name}
                   </Link>
