@@ -27,6 +27,9 @@ export default function Home() {
       <div id="services" className="scroll-mt-20">
         <Ticker text={tickerText} />
         <ScrollReveal direction="up">
+        <Stats />
+      </ScrollReveal>
+        <ScrollReveal direction="up">
           <Services />
         </ScrollReveal>
       </div>
@@ -91,9 +94,7 @@ export default function Home() {
       {/* Die Gallery regelt ihre Abstände intern */}
       <Gallery />
 
-      <ScrollReveal direction="up">
-        <Stats />
-      </ScrollReveal>
+      
             <About />
       <ScrollReveal direction="up">
         <Contact />

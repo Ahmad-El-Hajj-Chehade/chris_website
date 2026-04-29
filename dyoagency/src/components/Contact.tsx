@@ -26,7 +26,7 @@ export default function Contact() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-12 md:mb-16 items-start">
           <div>
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-black uppercase tracking-tighter leading-[0.95] mb-3 sm:mb-4">Work with us</h2>
-            <p className="text-sm sm:text-base md:text-lg text-zinc-500 uppercase tracking-[0.18em] sm:tracking-widest">Inquiries & Bookings</p>
+            <p className="text-sm sm:text-base md:text-lg text-zinc-500 uppercase tracking-[0.18em] sm:tracking-widest">Bookings & Contact</p>
           </div>
           <div className="md:text-right pt-1 md:pt-2">
             <p className="text-xs uppercase font-bold tracking-[0.2em] text-zinc-400 mb-1">Direct Contact</p>
