@@ -55,7 +55,7 @@ With her debut solo single "3 Big Words" fully produced and release-ready, Regin
       For Yoyo, music is more than just entertainment—it is a powerful form of communication. His performances bring people together, transcend boundaries, and create shared moments that resonate long after the night is over. This ability to unite the audience and maintain high energy throughout his sets has quickly earned him recognition in the local scene.
 
       With a growing presence and a clear artistic vision, Yoyo continues to establish himself as a DJ to watch, delivering unforgettable performances that turn events into lasting experiences.
-    `,presskit:"/Press Kit Yoyo 3.pdf",  
+    `,presskit:"/pk_yoyo.pdf",  
 image: "/images/yoyo.jpeg",
   instagram: 'https://www.instagram.com/officialyoyo__/',
 

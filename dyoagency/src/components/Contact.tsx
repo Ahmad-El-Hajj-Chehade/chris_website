@@ -40,7 +40,7 @@ export default function Contact() {
           </div>
         </div>
 
-        <form action="https://formspree.io/f/mqedybbk" method="POST" className="space-y-6 md:space-y-8 border-t border-zinc-100 pt-10 md:pt-16">
+        <form action="https://formspree.io/f/xzdodoaw" method="POST" className="space-y-6 md:space-y-8 border-t border-zinc-100 pt-10 md:pt-16">
           {/* Honeypot Schutz gegen Spam */}
           <div className="hidden" aria-hidden="true">
             <input type="text" name="_gotcha" tabIndex={-1} autoComplete="off" />
