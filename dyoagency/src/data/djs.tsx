@@ -16,6 +16,21 @@ After a creative hiatus, he returned with "Monsters" featuring the American rapp
     instagram: 'https://www.instagram.com/dynoro/',
     website: 'https://www.dynoro.com/'
   },
+   {
+    id: 'lia-lisse',
+    name: 'LIA LISSE',
+    shortBio: 'Techno / Hard Techno DJ & Producer',
+    fullBio: `Lia Lisse is recognized as one of the internationally rising DJs and producers in the Techno and Hard Techno scene. With powerful beats, energetic performances and a strong stage presence, she captivates audiences worldwide at festivals, clubs and international events.
+
+She has been awarded “Top 100 Female DJ Worldwide”, “Top 50 Female DJ in Europe” and “Best Female DJ in Belarus”. Throughout her career, Lia Lisse has performed in more than 40 countries across three continents, including Europe, North America and Asia, and has appeared at world renowned festivals such as Tomorrowland and Ultra Europe. She has shared the stage with international stars including Dimitri Vegas & Like Mike, Martin Garrix, Afrojack and Steve Aoki.
+
+As a producer, she has released music on labels such as Smash The House, Dragon X Records, Overtuned Records and Blanco y Negro. Her track “Holding On” was released on Smash The House / Generation Smash and entered the Beatport Top 100 Electro Charts. Since 2017, Lia Lisse has been an official artist at the Amsterdam Dance Event and an international resident DJ at VOID Club Bangkok, ranked #67 in DJ Mag’s Top 100 Clubs 2026.
+`,
+    presskit: '/lia-lisse-presskit.pdf',
+    image: '/images/lia_lisse.jpg',
+    instagram: '',
+    website: ''
+  },
   {
     id: 'simon-miles',
     name: 'SIMON MILES',
@@ -56,50 +71,9 @@ With her debut solo single "3 Big Words" fully produced and release-ready, Regin
 
       With a growing presence and a clear artistic vision, Yoyo continues to establish himself as a DJ to watch, delivering unforgettable performances that turn events into lasting experiences.
     `,presskit:"/pk_yoyo.pdf",  
-image: "/images/yoyo.jpeg",
+image: "/images/yoyo.jpg",
   instagram: 'https://www.instagram.com/officialyoyo__/',
 
-  },
-  {
-    id: 'lia-lisse',
-    name: 'LIA LISSE',
-    shortBio: 'Techno / Hard Techno DJ & Producer',
-    fullBio: `Born in Belarus, Lia Lisse is an international DJ and producer recognized for her powerful fusion of Techno, Hard Techno and Peak-Time sound. With explosive beats, raw passion and magnetic stage presence behind the decks, Lia is a name made for nights nobody forgets.
-
-AWARDS :
-
-- Top 100 Female Dj Worldwide
-
-- Top 50 Female Dj in Europe
-
-- Best Female Dj in Belarus
-
-Support : Ultra Europe, Tomorrowland, Sunburn festival, ADE, Djanetop, Djanemag, Fashion TV
-
-TOUR : Performed in over 40 countries across 3 continents, including Europe, North America and Asia.
-
-Her international journey includes shows in Belgium, Croatia, Netherlands, Singapore, Malaysia, Thailand, China, Qatar, Bahrain, Sweden, Norway, Spain, Czech Republic, Switzerland, Mauritius, Egypt, India, Indonesia to name a few. Hitting the biggest music festivals in the World: Tomorrowland, Ultra Music Festival Europe. Shared the stage with Dimitri Vegas & Like Mike, Martin Garrix, Afrojack, Timmy Trumpet, Steve Aoki and other DJ Mag Top 100 DJs. International resident DJ at VOID Club in Bangkok, Thailand (#67 in DJ Mag’s Top 100 Clubs 2026)
-
-MUSIC: Started producing a few years ago, Lia has already built a strong presence in the scene and released on one of the leading labels.
-
-“Holding On” came out on Dimitri Vegas & Like Mike’s label Smash The House / Generation Smash, received strong support and entered the Beatport Top 100 Electro chart.
-
-LABELS:
-
-- Smash The House
-
-- Dragon X Records
-
-- Overtuned Records
-
-- Blanco y Negro
-
-Official artist at Amsterdam Dance Event since 2017.
-`,
-    presskit: '/lia-lisse-presskit.pdf',
-    image: '/images/lia_lisse.jpg',
-    instagram: '',
-    website: ''
   },
    {
     id: 'future-artist',
