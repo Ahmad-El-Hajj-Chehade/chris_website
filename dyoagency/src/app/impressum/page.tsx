@@ -12,8 +12,8 @@ export default function Impressum() {
           <section className="space-y-8">
             <div>
               <h2 className="text-xs uppercase font-bold text-zinc-500 mb-4 tracking-[0.2em]">Contact / Kontakt</h2>
-              <p className="font-bold text-lg">Chris Management</p>
-              <p>Bern, Switzerland</p>
+              <p className="font-bold text-lg">Christian Lüdi</p>
+              <p>Biel, Switzerland</p>
               <p className="mt-2">UID: CHE-427.916.744</p>
               <p className="mt-4">
                 Email: <a href="mailto:info@chris.management" className="underline hover:text-zinc-400 transition-colors">info@chris.management</a>

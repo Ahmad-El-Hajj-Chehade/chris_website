@@ -29,7 +29,7 @@ function Counter({ value, suffix = "" }: { value: number; suffix?: string }) {
 }
 
 const stats = [
-  { label: "Active Roster", value: 4, suffix: "" },
+  { label: "Active Roster", value: 5, suffix: "" },
   { label: "Annual Shows", value: 250, suffix: "+" },
   { label: "Countries Reached", value: 25, suffix: "+" },
   { label: "Years Experience", value: 10, suffix: "+" }

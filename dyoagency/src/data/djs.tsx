@@ -28,8 +28,8 @@ As a producer, she has released music on labels such as Smash The House, Dragon 
 `,
     presskit: '/lia-lisse-presskit.pdf',
     image: '/images/lia_lisse.jpg',
-    instagram: '',
-    website: ''
+    instagram: 'https://www.instagram.com/lialisse/',
+   
   },
   {
     id: 'simon-miles',
