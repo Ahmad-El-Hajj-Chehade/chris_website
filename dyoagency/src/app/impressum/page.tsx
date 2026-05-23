@@ -39,7 +39,7 @@ export default function Impressum() {
                 Das Kontaktformular auf dieser Website wird über den externen Dienstleister Formspree betrieben.
               </p>
               <p className="mb-3">
-                Bei der Nutzung des Formulars werden die eingegebenen Daten (z. B. Name, E-Mail-Adresse und Nachricht) zur Bearbeitung der Anfrage an Formspree übertragen und verarbeitet.
+                Bei der Nutzung des Formulars werden die eingegebenen Daten (z. B. Name, E-Mail-Adresse, Telefonnummer und Nachricht) zur Bearbeitung der Anfrage an Formspree übertragen und verarbeitet.
               </p>
               <p>
                 Es gelten zusätzlich die Datenschutzbestimmungen von Formspree:{' '}
@@ -125,7 +125,7 @@ export default function Impressum() {
                 The contact form on this website is operated via the external service provider Formspree.
               </p>
               <p className="mb-3">
-                When using the contact form, the entered data (e.g. name, e-mail address and message) is transmitted to and processed by Formspree for the purpose of handling the inquiry.
+                When using the contact form, the entered data (e.g. name, e-mail address, phone number and message) is transmitted to and processed by Formspree for the purpose of handling the inquiry.
               </p>
               <p>
                 Formspree&apos;s privacy policy also applies:{' '}

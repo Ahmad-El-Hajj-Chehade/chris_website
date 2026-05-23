@@ -63,6 +63,7 @@ export default function Privacy() {
               <ul className="list-disc list-inside space-y-1 text-zinc-300 mb-3">
                 <li>Name</li>
                 <li>E-Mail-Adresse</li>
+                <li>Telefonnummer</li>
                 <li>Inhalt Ihrer Nachricht</li>
                 <li>technische Verbindungsdaten</li>
               </ul>
@@ -83,6 +84,7 @@ export default function Privacy() {
               <ul className="list-disc list-inside space-y-1 text-zinc-300 mb-3">
                 <li>Name</li>
                 <li>E-Mail-Adresse</li>
+                <li>Telefonnummer</li>
                 <li>Nachrichteninhalt</li>
                 <li>IP-Adresse</li>
                 <li>technische Metadaten</li>
@@ -111,7 +113,7 @@ export default function Privacy() {
             <div>
               <h2 className="text-xs uppercase font-bold text-zinc-500 mb-4 tracking-[0.2em]">7. Weitergabe an Dritte</h2>
               <p className="mb-3">
-                Ihre personenbezogenen Daten werden grundsätzlich nicht verkauft oder unberechtigt an Dritte weitergegeben.
+                Ihre personenbezogenen Daten werden nicht verkauft oder unberechtigt an Dritte weitergegeben.
               </p>
               <p className="mb-3">Eine Weitergabe erfolgt nur:</p>
               <ul className="list-disc list-inside space-y-1 text-zinc-300">
@@ -216,6 +218,7 @@ export default function Privacy() {
               <ul className="list-disc list-inside space-y-1 text-zinc-300 mb-3">
                 <li>name</li>
                 <li>e-mail address</li>
+                <li>phone number</li>
                 <li>message content</li>
                 <li>technical connection data</li>
               </ul>
@@ -236,6 +239,7 @@ export default function Privacy() {
               <ul className="list-disc list-inside space-y-1 text-zinc-300 mb-3">
                 <li>name</li>
                 <li>e-mail address</li>
+                <li>phone number</li>
                 <li>message content</li>
                 <li>IP address</li>
                 <li>technical metadata</li>
@@ -264,7 +268,7 @@ export default function Privacy() {
             <div>
               <h2 className="text-xs uppercase font-bold text-zinc-500 mb-4 tracking-[0.2em]">7. Sharing Data with Third Parties</h2>
               <p className="mb-3">
-                Your personal data will generally not be sold or unlawfully shared with third parties.
+                Your personal data will not be sold or unlawfully shared with third parties.
               </p>
               <p className="mb-3">Data is only shared:</p>
               <ul className="list-disc list-inside space-y-1 text-zinc-300">
