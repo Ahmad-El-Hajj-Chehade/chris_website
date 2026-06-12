@@ -12,21 +12,53 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://dyoagency.com'),
-  title: 'CHRIS MANAGEMENT | Booking Agency & Artist Management | Zurich',
-  description: 'Leading boutique agency for Electronic Music (Techno, House) and Acoustic Pop. Representing DYNORO, INAMAR, Regina Brury and more. Book elite DJs and Singers for international events, festivals and clubs.',
-  keywords: [
-    'Artist Management Switzerland', 'Booking Agency Zurich', 'Electronic Music Agency', 
-    'Techno DJ Booking', 'House DJ Management', 'Singer Booking Switzerland', 
-    'Acoustic Pop Artists', 'Female DJs Switzerland', 'International Artist Representation', 
-    'Event Entertainment Zurich', 'Festival Booking Agency', 'Music Talent Management'
-  ],
-  authors: [{ name: "Chris Management" }],
-  openGraph: {
-    title: "Chris Management | Global Artist Management",
-    description: "Bridging the gap between world-class DJs and global festival stages.",
-    url: "https://dyoagency.com",
-    siteName: "Chris Management",
+ metadataBase: new URL('https://chris.management'),
+
+title: 'CHRIS MANAGEMENT | Global Artist Management',
+
+description:
+  'Chris Management ist eine internationale Artist-Management-Agentur für DJs, Musiker und kreative Talente. Wir begleiten Künstler mit strategischer Karriereentwicklung, Markenaufbau, internationaler Repräsentation und nachhaltigem Wachstum in der Musik- und Entertainmentbranche.',
+
+keywords: [
+  // Brand
+  'Chris Management',
+
+  // Core Services
+  'Artist Management',
+  'Artist Management Switzerland',
+  'Artist Development',
+  'DJ Management',
+
+  // Genres
+  'House Music Artists',
+  'Techno Artists',
+  'Melodic Techno',
+  'EDM Artists',
+  'Pop Artists',
+  'Singer Songwriter',
+  'Female Singer',
+  'Female DJ',
+
+  // Event & Industry
+  'Festival Artists',
+  'Club Artists',
+
+  // Artist Names
+  'Dynoro',
+  'Lia Lisse',
+  'Simon Miles',
+  'Regina Brury',
+  'YOYO'
+],
+
+authors: [{ name: 'Chris Management' }],
+
+openGraph: {
+  title: 'Chris Management | International Artist Management',
+  description:
+    'Representing Dynoro, Lia Lisse, Simon Miles, Regina Brury and YOYO. Strategic artist management, talent development and international representation for DJs, musicians and creative talent.',
+  url: 'https://chris.management',
+  siteName: 'Chris Management',
     images: [
       {
         url: "/og-image.jpg", // Erstelle ein 1200x630px Bild in deinem public Ordner

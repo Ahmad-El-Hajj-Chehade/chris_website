@@ -3,7 +3,7 @@ import { MetadataRoute } from 'next';
 import { djs } from '@/data/djs';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://dyoagency.com'; // Deine echte Domain hier eintragen
+  const baseUrl = 'https://chris.management'; // Deine echte Domain hier eintragen
 
   // Alle Artist-URLs generieren
   const artistUrls = djs.map((dj) => ({
